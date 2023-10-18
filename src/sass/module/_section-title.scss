@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+.section-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(6);
+}
+
+.section-title__main {
+  color: #0D2936;
+  font-family: $en-font-family;
+  font-size: rem(32);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.section-title__main span {
+  color: #408f95;
+}
+
+.section-title__sub {
+  font-family: $ja-font-family;
+  font-size: rem(12);
+  line-height: 1.5;
+  color: #408F95;
+}
