@@ -1,0 +1,16 @@
+@use 'global' as *;
+
+.sns-icon {
+  max-width: rem(24);
+  aspect-ratio: 24/24;
+  @include mq(md) {
+    max-width: rem(32);
+    aspect-ratio: 32/32;
+  }
+}
+
+.sns-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

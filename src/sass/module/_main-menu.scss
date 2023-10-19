@@ -1,0 +1,57 @@
+@use 'global' as *;
+
+.main-menu {
+  height: inherit;
+}
+
+.main-menu__item {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu__link {
+  font-family: $ja-font-family;
+  font-size: rem(10);
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-menu__item:hover{
+  color:#FFF;
+}
+
+.main-menu__link::after {
+  content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: rem(15);
+    left: 0;
+    /*線の形状*/
+    width: 100%;
+    height: 2px;
+    background:#FFF;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+.main-menu__link:hover::after{
+  transform: scale(1, 1);
+}
+
+
+.main-menu__label {
+  font-family: $en-font-family;
+  font-size: rem(18);
+  color: #fff;
+}
+

@@ -1,0 +1,51 @@
+@use 'global' as *;
+
+.main-list {}
+.main-list__items {
+  list-style: none;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,rem(168));
+  // place-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  // grid-template-columns: repeat(auto-fill,  minmax(166px, 1fr));
+  // grid-template-rows: repeat(10, auto);
+  // grid-auto-flow: column;
+}
+
+.main-list__item {
+  padding-top: rem(34);
+  padding-left: rem(22);
+  position: relative;
+  // text-indent: -1em;
+  // padding-left: 1em;
+}
+
+.main-list__item:before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/hitode.svg);
+  display: block;
+  width: rem(18);
+  height: rem(18);
+  top: rem(38);
+  left: 0;
+}
+
+.main-list__item-link {
+  color: #FFF;
+  font-family: $ja-font-family;
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1.125;
+}
+
+.main-list__left-area {
+  // width: 50%;
+}
+
+.main-list__right-area {
+  // width: 50%
+  padding-left: rem(6);;
+}
