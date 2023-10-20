@@ -1,0 +1,63 @@
+@use 'global' as *;
+
+.section-padding {
+  padding: rem(80) 0;
+  @include mq(md) {
+    padding: rem(100) 0;
+  }
+}
+
+.section-padding--blog {
+  padding-top: rem(80);
+  @include mq(md) {
+    padding-top: rem(100);
+  }
+}
+
+
+
+.section__padding--campaign {
+  padding-top: rem(40);
+  @include mq(md) {
+    padding-top: rem(120);
+  }
+}
+
+.section-padding__about-us {
+  padding: rem(80) 0;
+  @include mq(md) {
+    padding-top: rem(140);
+    padding-bottom: rem(363);
+  }
+}
+
+.section-padding__voice {
+  padding-top: rem(89);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    padding: rem(140) 0;
+  }
+}
+.section-padding__price {
+  padding: rem(86) 0;
+  @include mq(md) {
+    padding: rem(100) 0;
+  }
+}
+
+.section-padding__contact {
+  padding-top: rem(80);
+  padding-bottom: rem(100);
+  @include mq(md) {
+    padding-top: rem(140);
+    padding-bottom: rem(149);
+  }
+}
+
+.section-padding__footer {
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding: rem(80) 0;
+  }
+}

@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.tag {
+  padding: rem(3) rem(11);
+  border: 1px solid #408F95;
+  display: inline-block;
+}
+
+.tag p {
+  font-family: $ja-font-family;
+  font-size: rem(12);
+  font-weight: 400;
+  line-height: 1.8;
+  color: #408F95;
+}
+
+.tag.tag--campaign {
+  padding: rem(5) rem(15);
+}
