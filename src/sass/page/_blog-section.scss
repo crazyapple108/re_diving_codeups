@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.blog-section {
+  @include mq(md) {
+    background-image: url(/assets/images/common/bg-blog.jpg);
+    background-size: 100% 60.4%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+}
+
+.blog-section__inner::before {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    top: 2.6%;
+    left: 7%;
+    background-image: url(/assets/images/common/blog-bg-fish.png);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: rem(376.51);
+    height: 100%;
+    max-height: rem(120.76);
+  }
+}

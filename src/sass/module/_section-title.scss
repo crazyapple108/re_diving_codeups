@@ -30,3 +30,22 @@
   line-height: 1.5;
   color: #408F95;
 }
+
+
+.section-title__main--blog {
+  @include mq(md) {
+    color: #fff;
+  }
+}
+
+.section-title__main--blog span{
+  @include mq(md) {
+    color: #fff;
+  }
+}
+
+.section-title__sub--blog {
+  @include mq(md) {
+    color: #fff;
+  }
+}
