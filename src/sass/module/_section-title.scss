@@ -14,7 +14,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1;
-  text-transform: capitalize;
   @include mq(md) {
     font-size: rem(40);
   }
@@ -22,6 +21,7 @@
 
 .section-title__main span {
   color: #408f95;
+  text-transform: capitalize;
 }
 
 .section-title__sub {

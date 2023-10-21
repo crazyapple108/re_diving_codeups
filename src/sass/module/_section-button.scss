@@ -1,0 +1,23 @@
+@use 'global' as *;
+
+.section-button {
+  margin-top: rem(40);
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+.section-button--info,.section-button--about {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.section-button--price {
+  @include mq(md) {
+    margin-top: rem(176);
+  }
+}

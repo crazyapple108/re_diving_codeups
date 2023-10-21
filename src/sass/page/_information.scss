@@ -1,0 +1,69 @@
+@use 'global' as *;
+
+.information__section {
+  background-color: #DDF0F1;
+}
+
+.information__contents {
+  padding-top: rem(30);
+  @include mq(md) {
+    padding-top: rem(40);
+  }
+}
+
+.information__contents {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    gap: rem(48);
+  }
+}
+
+.information__img {
+  aspect-ratio: 345 / 227;
+  @include mq(md) {
+    aspect-ratio: 540 / 356;
+  }
+}
+
+.information__img img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.information__body {
+  padding-top: rem(24);
+  @include mq(md) {
+    padding-top: 0;
+    width: 50%;
+  }
+}
+
+.information__body-title {
+  position: relative;
+  display: block;
+  font-family: $ja-font-family;
+  font-size: rem(20);
+  font-weight: normal;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.information__body-title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: rem(1);
+  background-color: #408F95;
+  bottom: rem(-4);
+  left: 0;
+}
+
+.information__text {
+  padding-top: rem(12);
+  font-family: $ja-font-family;
+  font-size: rem(16);
+  line-height: 1.5;
+}
