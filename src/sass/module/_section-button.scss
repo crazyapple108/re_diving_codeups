@@ -21,3 +21,8 @@
     margin-top: rem(176);
   }
 }
+.section-button--contact {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

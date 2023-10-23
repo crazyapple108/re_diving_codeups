@@ -12,12 +12,19 @@
   position: relative;
 }
 
+.about-us__section-inner.inner {
+  @include mq(md) {
+    max-width: rem(1080);
+    
+  }
+}
+
 .about-us__section-inner::before {
   @include mq(md) {
     content: "";
     position: absolute;
     top: 124%;
-    right: calc(50% - min(50vw,650px));
+    right: calc(50% - min(50vw,rem(637)));
     background-image: url(/assets/images/common/sango&isogin.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,8 +49,8 @@
   right: 0;
   @include mq(md) {
     top: rem(106);
-    left: -1.8%;
-
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -77,7 +84,7 @@
   // height: 83%;
   @include mq(md) {
     aspect-ratio: 880 / 581;
-    top: 15.4%;
+    top: 14.8%;
     width: min(61.111vw, rem(880));
     left: 21.7%;
   }
@@ -101,7 +108,7 @@
   @include mq(md) {
     padding-top: 20%;
     display: flex;
-    gap: rem(40);
+    // gap: rem(40);
     align-items: start;
     margin-left: 18.42%;
   }

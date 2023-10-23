@@ -49,3 +49,10 @@
     color: #fff;
   }
 }
+
+.section-title__main--contact {
+  font-size: rem(80);
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}

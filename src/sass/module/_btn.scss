@@ -3,18 +3,18 @@
 .btn {
   position: relative;
   width: 100%;
-  max-width: rem(202);
+  max-width: rem(199);
   background-color: #408F95;
   height: 100%;
-  max-height: rem(56);
+  max-height: rem(53);
   outline: 1px solid #408F95;
 }
 
 .btn::after {
   content: '';
 	position: absolute;
-	bottom: rem(-6);
-	right: rem(-6);
+	bottom: rem(-4);
+	right: rem(-4);
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
@@ -23,32 +23,39 @@
 }
 
 .btn a{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: inherit;
+  height: inherit;
   position: relative;
   color: #FFF;
-  padding: rem(16) rem(88) rem(16) rem(40);
+  padding: rem(16) rem(88) rem(16) rem(37);
   font-size: rem(14);
   font-family: $en-font-family;
   font-weight: 300;
-  line-height: 1.25;
-  letter-spacing: 0.05em;
+  // line-height: 1.25;
+  // letter-spacing: 0.05em;
   white-space: nowrap;
   z-index: 3;
+}
+
+.btn a span{
   text-transform: capitalize;
 }
+
 
 .btn a::after {
   content: "";
   display: block;
   position: absolute;
-  top: calc(50% - rem(6));
-  right: rem(40);
+  top: 47%;
+  right: rem(42);
   width: rem(40);
   height: rem(6);
   border: none;
   border-right: 2px solid #FFF;
   border-bottom: 1px solid #FFF;
-  transform: skew(45deg);
+  transform: translateY(-50%) skew(45deg);
 }
 
 .btn a:hover {

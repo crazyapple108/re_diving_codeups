@@ -40,8 +40,8 @@
   <body>
     <header class="header">
       <div class="header__inner inner">
-        <h1 class="header__title">
-          <a class="header__title-link" href="index.html">
+        <h1 class="logo">
+          <a class="logo__link" href="index.html">
             <img src="assets/images/common/logo.svg" alt="codeups" />
           </a>
         </h1>
@@ -231,6 +231,45 @@
     </header>
 
       <main>
+        <section class="mv">
+          <div class="mv__inner">
+            <div class="mv__section-header">
+              <h2 class="mv__section-title">DIVING</h2>
+              <p class="mv__section-subtitle">into the ocean</p>
+            </div>
+            
+            <div class="swiper js-mv-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/sp-mv1.jpg" media="(max-width:768px)"/>
+                    <source srcset="./assets/images/common/mv1.jpg" media="(min-width:769px)"/>
+                    <img src="./assets/images/common/mv1.jpg" alt="">
+                  </picture>
+                  </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/sp-mv2.jpg" media="(max-width:768px)"/>
+                    <source srcset="./assets/images/common/mv2.jpg" media="(min-width:769px)"/>
+                    <img src="./assets/images/common/mv2.jpg" alt="">
+                  </picture></div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/sp-mv3.jpg" media="(max-width:768px)"/>
+                    <source srcset="./assets/images/common/mv3.jpg" media="(min-width:769px)"/>
+                    <img src="./assets/images/common/mv3.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="./assets/images/common/sp-mv4.jpg" media="(max-width:768px)"/>
+                    <source srcset="./assets/images/common/mv4.jpg" media="(min-width:769px)"/>
+                    <img src="./assets/images/common/mv4.jpg" alt="">
+                  </picture></div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- <div id="demo02" class="card02 l-section">
           <div class="l-inner">
             <div class="swiper">
@@ -433,7 +472,7 @@
               <div class="section-button section-button--about">
                 <div class="btn button__mask">
                   <a href="" class="">
-                    view more
+                    <span>v</span>iew more
                   </a>
                 </div>
               </div>
@@ -465,7 +504,7 @@
               <div class="section-button section-button--info">
                 <div class="btn button__mask">
                   <a href="" class="">
-                    view more
+                    <span>v</span>iew more
                   </a>
                 </div>
               </div>
@@ -474,7 +513,7 @@
         </div>
       </section>
       <!-- blog-section -->
-      <section class="blog-section section-interval--blog" id="blog">
+      <section class="blog__section section-interval--blog" id="blog">
         <div class="blog-section__inner inner">
           <div class="section-title">
             <h2 class="section-title__main section-title__main--blog">
@@ -511,7 +550,7 @@
                 </div>
                 <div class="blog-card__body">
                   <p class="blog-card__date">2023.11/17</p>
-                  <h3 class="card__title">ライセンス取得</h3>
+                  <h3 class="card__title">ウミガメと泳ぐ</h3>
                   <p class="blog-card__text">
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
@@ -529,7 +568,7 @@
                 </div>
                 <div class="blog-card__body">
                   <p class="blog-card__date">2023.11/17</p>
-                  <h3 class="card__title">ライセンス取得</h3>
+                  <h3 class="card__title">カクレクマノミ</h3>
                   <p class="blog-card__text">
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
@@ -541,19 +580,238 @@
           <div class="section-button">
             <div class="btn button__mask">
               <a href="" class="">
-                view more
+                <span>v</span>iew more
               </a>
             </div>
           </div>
         </div>
+      </section>
+      <!-- voice-section -->
+      <section class="voice__section section-interval section-interval--voice" id="voice">
+        <div class="voice-section__inner inner">
+          <div class="section-title">
+            <h2 class="section-title__main"><span>v</span>oice</h2>
+            <p class="section-title__sub">お客様の声</p>
+          </div>
+          <div class="voice-card__wrapper">
+            <div class="voice-card">
+              <div class="voice-card__inner">
+                <div class="voice-card__head">
+                  <div class="voice-card__heading">
+                    <div class="voice-card__tag-area">
+                      <p class="voice-card__gender">20代(女性)</p>
+                      <div class="tag">
+                        <p>ライセンス講習</p>
+                      </div>
+                    </div>
+                    <h3 class="card__title card__title--voice">
+                      ここにタイトルが入ります。ここにタイトル
+                    </h3>
+                  </div>
+                  <div class="voice-card__img">
+                    <img
+                      src="./assets/images/common/voice-img1.jpg"
+                      alt="女性の写真"
+                    />
+                  </div>
+                </div>
+                <div class="voice-card__body">
+                  <p class="voice-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="voice-card">
+              <div class="voice-card__inner">
+                <div class="voice-card__head">
+                  <div class="voice-card__heading">
+                    <div class="voice-card__tag-area">
+                      <p class="voice-card__gender">20代(男性)</p>
+                      <div class="tag">
+                        <p>ファンダイビング</p>
+                      </div>
+                    </div>
+                    <h3 class="card__title card__title--voice">
+                      ここにタイトルが入ります。ここにタイトル
+                    </h3>
+                  </div>
+                  <div class="voice-card__img">
+                    <img
+                      src="./assets/images/common/voice-img2.jpg"
+                      alt="男性の写真"
+                    />
+                  </div>
+                </div>
+                <div class="voice-card__body">
+                  <p class="voice-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-button">
+            <div class="btn button__mask">
+              <a href="" class="">
+                <span>v</span>iew more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- price-section -->
+      <section class="price__section section-interval" id="price">
+        <div class="price__section-inner inner">
+          <div class="section-title">
+            <h2 class="section-title__main"><span>p</span>rice</h2>
+            <p class="section-title__sub">料金一覧</p>
+          </div>
+          <div class="price__contents">
+            <picture class="price__img">
+              <source
+                srcset="../assets/images/common/price1-sp.jpg"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="../assets/images/common/price1-pc.jpg"
+                alt="海の中の写真"
+              />
+            </picture>
+            <div class="price__rate-sheet">
+              <table class="price__table">
+                <tr>
+                  <th colspan="2">ライセンス講習</th>
+                </tr>
+                <tr>
+                  <td>オープンウォーターダイバーコース</td>
+                  <td>¥50,000</td>
+                </tr>
+                <tr>
+                  <td>アドバンスドオープンウォーターコース</td>
+                  <td>¥60,000</td>
+                </tr>
+                <tr>
+                  <td>レスキュー＋EFRコース</td>
+                  <td>¥70,000</td>
+                </tr>
+              </table>
+              <table class="price__table">
+                <tr>
+                  <th colspan="2">体験ダイビング</th>
+                </tr>
+                <tr>
+                  <td>ビーチ体験ダイビング(半日)</td>
+                  <td>¥7,000</td>
+                </tr>
+                <tr>
+                  <td>ビーチ体験ダイビング(1日)</td>
+                  <td>¥14,000</td>
+                </tr>
+                <tr>
+                  <td>ボート体験ダイビング(半日)</td>
+                  <td>¥10,000</td>
+                </tr>
+                <tr>
+                  <td>ボート体験ダイビング(1日)</td>
+                  <td>¥18,000</td>
+                </tr>
+              </table>
+              <table class="price__table">
+                <tr>
+                  <th colspan="2">ファンダイビング</th>
+                </tr>
+                <tr>
+                  <td>ビーチダイビング(2ダイブ)</td>
+                  <td>¥14,000</td>
+                </tr>
+                <tr>
+                  <td>ボートダイビング(2ダイブ)</td>
+                  <td>¥18,000</td>
+                </tr>
+                <tr>
+                  <td>スペシャルダイビング(2ダイブ)</td>
+                  <td>¥24,000</td>
+                </tr>
+                <tr>
+                  <td>ナイトダイビング(1ダイブ)</td>
+                  <td>¥10,000</td>
+                </tr>
+              </table>
+              <table class="price__table">
+                <tr>
+                  <th colspan="2">スペシャルダイビング</th>
+                </tr>
+                <tr>
+                  <td>貸切ダイビング(2ダイブ)</td>
+                  <td>¥24,000</td>
+                </tr>
+                <tr>
+                  <td>1日ダイビング(3ダイブ)</td>
+                  <td>¥32,000</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="section-button section-button--price">
+            <div class="btn button__mask">
+              <a href="" class="">
+                <span>v</span>iew more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact-section -->
+      <section class="contact__section section-interval section-interval__contact" id="contact">
+        <div class="contact__section-inner inner">
+          <div class="contact__wrapper">
+          <div class="contact__wrapper-inner">
+            <div class="contact__contents">
+              <div class="contact__logo">
+                <img src="../assets/images/common/CodeUps-green.svg" alt="" class="">
+              </div>
+              <div class="contact-section__info-area">
+                <div class="contact__shop-info">
+                  <p>沖縄県那覇市1-1</p>
+                  <p>TEL:0120-000-0000</p>
+                  <p>営業時間:8:30-19:00</p>
+                  <p>定休日:毎週火曜日</p>
+                </div>
+                <div class="contact__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.4150353387884!2d127.672955194252!3d26.21064483558762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569133d386a69%3A0x2f0a75fad806944a!2z6YKj6KaH6aeF6Leh!5e1!3m2!1sja!2sjp!4v1697898653565!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="contact__button-area">
+              <div class="section-title section-title--contact">
+                <h2 class="section-title__main section-title__main--contact"><span>c</span>ontact</h2>
+                <p class="section-title__sub section-title__sub--shadow">お問い合わせ</p>
+                <p class="section-title__sub section-title__sub--lead">ご予約・お問い合わせはコチラ</p>
+              </div>
+              <div class="section-button section-button--contact">
+                <div class="btn button__mask">
+                  <a href="" class="">
+                    <span>v</span>iew more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
       </main>
 
     <footer class="footer sectio-interval section-interval__footer" id="footer">
       <div class="footer__inner inner">
         <div class="footer__head">
-          <div class="footer__title">
-            <img class="siteTitle" src="assets/images/common/logo.svg" alt="CodeUps">
+          <div class="logo">
+            <img class="logo__link" src="assets/images/common/logo.svg" alt="CodeUps">
             </a>
           </div>
           <div class="footer__sns-area">

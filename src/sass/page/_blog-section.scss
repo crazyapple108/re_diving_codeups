@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.blog-section {
+.blog__section {
   @include mq(md) {
     background-image: url(/assets/images/common/bg-blog.jpg);
     background-size: 100% 60.4%;
@@ -10,18 +10,19 @@
   }
 }
 
-.blog-section__inner::before {
+.blog__section::before {
   @include mq(md) {
     content: "";
     position: absolute;
-    top: 2.6%;
-    left: 7%;
-    background-image: url(/assets/images/common/blog-bg-fish.png);
+    top: rem(24);
+    left: calc(50% - 43vw);
+    background-image: url(/assets/images/common/blog-bg-fish.svg);
     background-size: cover;
+    background-repeat: no-repeat;
     display: block;
     width: 100%;
-    max-width: rem(376.51);
+    max-width: rem(437);
     height: 100%;
-    max-height: rem(120.76);
+    max-height: rem(201);
   }
 }

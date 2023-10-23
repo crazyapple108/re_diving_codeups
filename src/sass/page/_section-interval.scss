@@ -13,6 +13,14 @@
     padding-top: rem(100);
   }
 }
+.section-interval--voice {
+  padding-top: rem(80);
+  @include mq(md) {
+    padding-top: rem(143);
+  }
+}
+
+
 
 .section__interval--campaign {
   padding-top: rem(40);
@@ -31,7 +39,7 @@
 .section__interval--information {
   // margin-top: rem(70);
   @include mq(md) {
-    margin-top: rem(383);
+    margin-top: rem(287);
   }
 }
 
