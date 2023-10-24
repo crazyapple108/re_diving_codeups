@@ -20,10 +20,14 @@
 }
 
 .campaign-card__body{
-  padding-top: rem(24);
-  padding-bottom: rem(37);
+  padding-top: rem(16);
+  padding-bottom: rem(24);
   padding-left: rem(16);
   padding-right: rem(16);
+  @include mq(md) {
+    padding-top: rem(24);
+    padding-bottom: rem(40);
+  }
 }
 .campaign-card__body-head{
   display: flex;
@@ -31,7 +35,7 @@
 }
 
 .campaign-card__price-title{
-  margin-top: rem(16);
+  margin-top: rem(20);
   font-family: $en-font-family;
   font-size: rem(14);
   line-height: 1.71;
@@ -46,7 +50,7 @@
 .campaign-card__price{
   display: flex;
   gap: rem(16);
-  margin-top: rem(8);
+  margin-top: rem(6);
   justify-content: center;
   align-items: end;
   @include mq(md) {

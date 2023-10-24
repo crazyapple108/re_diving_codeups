@@ -15,11 +15,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const mySwiper = new Swiper('.swiper-campaign', {
     slidesPerView: '1.2',
     spaceBetween: 24,
+    loop: true,
+    // loopAdditionalSlides: 1,
     // freeMode: true, // 前後のスライドで止まらずにスライド
     grabCursor: true, // カーソルを置いたときに指のカーソルを表示
     navigation: {
-      nextEl: '.card02 .swiper-button-next',
-      prevEl: '.card02 .swiper-button-prev',
+      nextEl: '.swiper-campaign-button-prev',
+      prevEl: '.swiper-campaign-button-next',
     },
     breakpoints: {
       768: {
