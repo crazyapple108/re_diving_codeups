@@ -1,0 +1,70 @@
+@use 'global' as *;
+
+.to-top{
+  position: fixed;
+  z-index: 1000;
+  right: 3.9%;
+  bottom: 0;
+  cursor: pointer;
+  transition: .3s;
+  width: rem(48);
+  height: rem(48);
+  border-radius: rem(50);
+  border: 1px solid #408F95;
+  transform: rotate(270deg);
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+  @include mq(md) {
+    right: 1.4%;
+    width: rem(80);
+    height: rem(80);
+  }
+}
+
+.to-top span {
+  border: none;
+  border-bottom: 1px solid #408F95;
+  border-right: 2px solid #408F95;
+  content: "";
+  display: block;
+  height: rem(6);
+  position: absolute;
+  right: 27%;
+  top: 40%;
+  transform: translateY(-50%);
+  transform: skew(45deg);
+  width: rem(28);
+  @include mq(md) {
+    width: rem(40);
+    top: 45%;
+  }
+}
+
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+/*このクラスが付与されると表示する*/
+.absolute{
+  position: absolute;
+  bottom: auto;
+  top: rem(-67);
+  right: 3.9%;
+  @include mq(md) {
+    right: 1.4%;
+    top: rem(-100);
+  }
+}
+
+
+.to-top.to-top__next {
+transform: rotate(0deg);
+}
+
+.to-top.to-top__prev {
+  transform: rotateY(180deg);
+  
+}

@@ -30,6 +30,7 @@
 }
 
 .section-interval__about-us {
+  padding-top: rem(88);
   @include mq(md) {
     padding-top: rem(140);
     padding-bottom: rem(363);
