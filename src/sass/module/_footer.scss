@@ -7,14 +7,12 @@
 
 .footer__inner{}
 
-.footer__title{
-  aspect-ratio: 120 / 45;
-  width: rem(120);
-  @include mq(md) {
-    aspect-ratio: 200 / 75;
-    width: rem(200);
-  }
-}
+// .footer__logo{
+//   aspect-ratio: 120 / 45;
+//   @include mq(md) {
+//     aspect-ratio: 200 / 75;
+//   }
+// }
 
 // .footer__title img {
 //   width: 100%;

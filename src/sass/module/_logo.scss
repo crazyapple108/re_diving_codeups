@@ -7,3 +7,10 @@
     width: rem(133);
   }
 }
+
+.logo__footer {
+  width: rem(120);
+  @include mq(md) {
+    width: rem(200);
+  }
+}

@@ -4,6 +4,10 @@
   background-color: #DDF0F1;
 }
 
+// .price__section-inner.inner {
+//   padding-left: rem(10);
+// }
+
 .price__contents {
   margin-top: rem(28.8);
   @include mq(md) {
@@ -67,18 +71,18 @@
 
 
 .price__rate-sheet .price__table:not(:first-child){
-  padding-top: rem(40);
+  padding-top: rem(35.2);
   @include mq(md) {
     padding-top: rem(32);
   }
 }
 
-.price__rate-sheet .price__table:nth-child(3){
-  padding-top: rem(27);
-}
-.price__rate-sheet .price__table:nth-child(4){
-  padding-top: rem(30);
-}
+// .price__rate-sheet .price__table:nth-child(3){
+//   padding-top: rem(27);
+// }
+// .price__rate-sheet .price__table:nth-child(4){
+//   padding-top: rem(30);
+// }
 
 
 .price__table {
@@ -96,6 +100,7 @@
   text-align: left;
   position: relative;
 }
+
 .price__table th::after{
   content: "";
   display: block;
@@ -108,8 +113,8 @@
 
 .price__table td {
   font-size: rem(14);
-  line-height: 1.714285714;
-  padding-top: rem(7);
+  // line-height: 1.714285714;
+  padding-top: rem(9);
   @include mq(md) {
     font-size: rem(16);
     line-height: 1.5;

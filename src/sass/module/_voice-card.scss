@@ -18,7 +18,7 @@
 }
 
 .voice-card__heading {
-  align-self: center;
+  // align-self: flex-start;
   // width: 50%;
   flex: 1;
   height: 100%;
@@ -30,7 +30,7 @@
 }
 
 .voice-card__tag-area {
-  padding-top: rem(5);
+  // padding-top: rem(5);
   @include mq(md) {
     display: flex;
     align-items: flex-end;
@@ -65,7 +65,7 @@
 }
 
 .voice-card__body {
-  margin-top: rem(16);
+  margin-top: rem(14.6);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -78,7 +78,7 @@
 }
 
 .voice-card__wrapper {
-  margin-top: rem(40);
+  margin-top: rem(45);
   display: flex;
   flex-direction: column;
   justify-content: center;

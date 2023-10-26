@@ -40,7 +40,8 @@
   font-size: rem(16);
   font-weight: normal;
   line-height: 1.5;
-  margin-top: rem(24);
+  letter-spacing: 0.01em;
+  margin-top: rem(23);
   // min-height: rem(120);
   display: -webkit-box;
   overflow: hidden;
@@ -79,7 +80,7 @@
 // }
 
 .blog-card__wrapper .blog-card:not(:first-child) {
-  margin-top: rem(40);
+  margin-top: rem(38.4);
   @include mq(md) {
     margin-top: initial;
   }

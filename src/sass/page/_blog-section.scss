@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.blog__section {
+.blog-section {
   @include mq(md) {
     background-image: url(/assets/images/common/bg-blog.jpg);
     background-size: 100% 60.4%;
@@ -10,7 +10,7 @@
   }
 }
 
-.blog__section::before {
+.blog-section::before {
   @include mq(md) {
     content: "";
     position: absolute;
@@ -25,4 +25,9 @@
     height: 100%;
     max-height: rem(201);
   }
+}
+
+.blog-section__inner.inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
 }

@@ -16,7 +16,8 @@
 .sub-list__items a {
   color: #FFF;
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 1rem;
+    font-size: rem(16);
     font-weight: initial;
     line-height: 1.125;
+    white-space: nowrap;
 }

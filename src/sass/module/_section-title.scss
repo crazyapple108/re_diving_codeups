@@ -44,15 +44,21 @@
   }
 }
 
-.section-title__sub--blog {
-  @include mq(md) {
-    color: #fff;
-  }
-}
-
 .section-title__main--contact {
   font-size: rem(80);
   @include mq(md) {
     font-size: rem(80);
   }
+}
+
+.section-title--contact {
+  gap: rem(0);
+}
+
+.section-title__sub--contact {
+  margin-top: rem(-5);
+}
+
+.section-title__sub--lead {
+  font-size: rem(14);
 }
