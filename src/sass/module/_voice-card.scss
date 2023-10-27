@@ -28,6 +28,7 @@
 .voice-card__heading {
   // align-self: flex-start;
   // width: 50%;
+  position: relative;
   flex: 1;
   height: 100%;
   @include mq(md) {
@@ -36,6 +37,19 @@
     width: 110%;
   }
 }
+
+.voice-card__heading::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: rem(1);
+  background-color: #408F95;
+  bottom: rem(-6);
+  left: 0;
+}
+
+
 
 .voice-card__tag-area {
   // padding-top: rem(5);
