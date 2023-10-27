@@ -23,6 +23,9 @@
 
 .contact__section-inner.inner{
   padding: 0 rem(40);
+  @include mq(md) {
+    padding: 0 rem(25);
+  }
 }
 
 .contact__wrapper{
@@ -41,7 +44,7 @@
 .contact__wrapper::after {
   position: absolute;
   content: "";
-  background-image: url(/assets/images/common/contact-bg-fish.png);
+  background-image: url(/assets/images/common/contact-fish.svg);
   background-repeat: no-repeat;
     background-size: contain;
   max-width: rem(109);
@@ -52,21 +55,21 @@
   max-height: rem(50);
 
   @include mq(md) {
-    top: -10%;
-    right: calc(50% - min(50vw,650px));
+    top: -9.9%;
+    right: calc(50% - min(50vw,670px));
     // display: inline-block;
     // width: 100%;
     width: calc(301 / 1440 * 100vw);
     max-width: rem(301);
     max-height: rem(138);
-    box-sizing: border-box;
+    // box-sizing: border-box;
   }
   }
 
 .contact__wrapper-inner{
   @include mq(md) {
     display: flex;
-    padding-top: rem(80);
+    padding-top: rem(85);
     padding-bottom: rem(80);
     padding-left: rem(50);
     gap: rem(163);
@@ -145,7 +148,7 @@
     position: relative;
     width: 100%;
     // gap: rem(21);
-    padding-top: rem(33);
+    padding-top: rem(31);
   }
 }
 
@@ -165,6 +168,7 @@
   padding-top: rem(16);
   text-align: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  white-space: nowrap;
   @include mq(md) {
     width: 35%;
     text-align: start;
@@ -189,8 +193,10 @@
   aspect-ratio: 295 / 160;
   @include mq(md) {
     width: 70.2%;
+    height: rem(148);
     padding-top: 0;
     padding-left: rem(23);
+    margin-top: 0;
   }
 }
 

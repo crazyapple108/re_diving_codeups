@@ -15,7 +15,7 @@
     content: "";
     position: absolute;
     top: rem(24);
-    left: calc(50% - 43vw);
+    left: calc(50% - min(49vw,rem(624)));
     background-image: url(/assets/images/common/blog-bg-fish.svg);
     background-size: cover;
     background-repeat: no-repeat;

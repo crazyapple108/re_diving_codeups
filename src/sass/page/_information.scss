@@ -23,6 +23,7 @@
   aspect-ratio: 345 / 227;
   @include mq(md) {
     aspect-ratio: 540 / 356;
+    width: 54%;
   }
 }
 
@@ -48,6 +49,10 @@
   font-weight: normal;
   line-height: 1.2;
   font-weight: bold;
+  @include mq(md) {
+    font-size: rem(24);
+    line-height: 1;
+  }
 }
 
 .information__body-title::after {
@@ -57,7 +62,7 @@
   width: 100%;
   height: rem(1);
   background-color: #408F95;
-  bottom: rem(-4);
+  bottom: rem(-6);
   left: 0;
 }
 
@@ -66,4 +71,7 @@
   font-family: $ja-font-family;
   font-size: rem(16);
   line-height: 1.5;
+  @include mq(md) {
+    letter-spacing: 0.01em;
+  }
 }

@@ -17,7 +17,17 @@
   }
 }
 
-.section-button--info,.section-button--about {
+.section-button--about {
+  margin-top: rem(50);
+  @include mq(md) {
+    margin-top: rem(-18);
+    position: relative;
+    z-index: 10;
+    margin-left: calc(50% + rem(55.6));
+}
+  }
+
+.section-button--info {
   margin-top: rem(42);
   @include mq(md) {
     margin-top: rem(40);
@@ -26,7 +36,7 @@
 
 .section-button--price {
   @include mq(md) {
-    margin-top: rem(176);
+    margin-top: rem(83);
   }
 }
 .section-button--contact {

@@ -19,6 +19,7 @@
   padding-bottom: rem(83.2);
   @include mq(md) {
     padding-top: rem(143);
+    padding-bottom: rem(145);
   }
 }
 // .section-interval__voice {
@@ -38,25 +39,26 @@
 
 .section-interval--about-us {
   padding-top: rem(88);
-  padding-bottom: rem(85);
+  padding-bottom: rem(75);
   @include mq(md) {
-    padding-top: rem(140);
-    padding-bottom: rem(363);
+    padding-top: rem(144);
+    padding-bottom: rem(384);
   }
 }
 
 .section-interval.section-interval--information {
   padding-top: rem(83);
   padding-bottom: rem(82);
-  // @include mq(md) {
-  //   margin-top: rem(287);
-  // }
+  @include mq(md) {
+    padding-top: rem(102);
+  }
 }
 
 .section-interval--price {
   padding: rem(86) 0;
   @include mq(md) {
-    padding: rem(100) 0;
+    padding-top: rem(100);
+    padding-bottom: rem(103);
   }
 }
 
@@ -64,7 +66,7 @@
   padding-top: rem(80);
   padding-bottom: rem(104);
   @include mq(md) {
-    padding-top: rem(140);
+    padding-top: rem(141);
     padding-bottom: rem(149);
   }
 }

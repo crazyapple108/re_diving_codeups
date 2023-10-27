@@ -53,6 +53,9 @@
 
 .section-title--contact {
   gap: rem(0);
+  @include mq(md) {
+    margin-top: rem(-10);
+  }
 }
 
 .section-title__sub--contact {
@@ -61,4 +64,9 @@
 
 .section-title__sub--lead {
   font-size: rem(14);
+}
+.section-title__sub--blog {
+  @include mq(md) {
+    color: #fff;
+  }
 }

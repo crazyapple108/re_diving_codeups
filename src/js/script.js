@@ -7,9 +7,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     clickable: true,
     loop: true,
     loopAdditionalSlides: 1,
-    // autoplay: {
-    //   delay: 3000
-    // }
+    autoplay: {
+      delay: 3000
+    }
   });
 
   const mySwiper = new Swiper('.swiper-campaign', {
