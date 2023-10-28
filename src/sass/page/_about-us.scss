@@ -12,15 +12,13 @@
     position: absolute;
     bottom: 6.5%;
     right: calc(50% - min(50vw,rem(638)));
-    background-image: url(/assets/images/common/sango&isogin.png);
+    background-image: url(../images/common/sango&isogin.png);
     background-size: cover;
     background-repeat: no-repeat;
-    // display: inline-block;
     max-height: rem(181);
     height: 100%;
     max-width: rem(194);
     width: 100%;
-    // width:100%;
     z-index: 10;
   }
 }
@@ -38,34 +36,12 @@
   }
 }
 
-// .about-us__section-inner::before {
-//   @include mq(md) {
-//     content: "";
-//     position: absolute;
-//     bottom: -57%;
-//     left: calc(50% + rem(440));
-//     background-image: url(/assets/images/common/sango&isogin.png);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     // display: inline-block;
-//     max-height: rem(181);
-//     height: 100%;
-//     max-width: rem(194);
-//     width: calc(194 / 1440 * 100vw);
-//     // width:100%;
-//     z-index: 10;
-//   }
-// }
-
 .about-us__img-area{
-  // padding-top: rem(24);
   width: 100%;
   max-width: 100%;
   height: 100%;
   max-height: 100%;
-  // position: absolute;
   position: relative;
-  // top: rem(87);
   margin-top: rem(30);
   left: 0;
   right: 0;
@@ -78,7 +54,6 @@
 
 .about-us__left-img {
   position: absolute;
-  // left: 4%;
   left: 0;
   top: 0;
   width: max(34.1333vw, rem(128));;
@@ -86,7 +61,6 @@
   overflow: hidden;
    aspect-ratio: 128 / 194;
   @include mq(md) {
-    // width: min(27.708333vw,rem(399));
     aspect-ratio: 399 / 606;
     left: 0;
   }
@@ -102,17 +76,12 @@
 .about-us__right-img {
   position: absolute;
   top: rem(26);
-  // left: 18%;
   right: 0;
   width: max(74.9333vw, rem(281));
   aspect-ratio: 281 / 186;
-  // height: 83%;
   @include mq(md) {
     aspect-ratio: 880 / 581;
     top: 14.8%;
-    // width: min(61.111vw, rem(880));
-    // left: 18.5%;
-    // right: 0;
   }
 }
 
@@ -132,10 +101,8 @@
   @include mq(md) {
     padding-top: 19%;
     display: flex;
-    // gap: rem(40);
     align-items: center;
     justify-content: center;
-    // margin-left: 18.42%;
     margin-top: rem(42);
   }
 }
@@ -202,4 +169,3 @@
     padding-top: 0;
   }
 }
-.about-us__content p{}

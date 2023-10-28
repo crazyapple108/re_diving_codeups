@@ -26,8 +26,6 @@
 }
 
 .voice-card__heading {
-  // align-self: flex-start;
-  // width: 50%;
   position: relative;
   flex: 1;
   height: 100%;
@@ -52,12 +50,10 @@
 
 
 .voice-card__tag-area {
-  // padding-top: rem(5);
   @include mq(md) {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    // gap: rem(104);
   }
 }
 
@@ -98,6 +94,7 @@
 .voice-card__text {
   font-family: $ja-font-family;
   font-size: rem(16);
+  color: #0D2936;
   line-height: 1.5;
 }
 
@@ -121,7 +118,7 @@
     position: absolute;
     top: -54%;
     left: calc(50% - min(50vw,620px));
-    background-image: url(/assets/images/common/voice-bg-fish.svg);
+    background-image: url(../images/common/voice-bg-fish.svg);
     background-size: cover;
     display: block;
     width: 100%;
@@ -137,7 +134,7 @@
     position: absolute;
     bottom: -52%;
     right:  calc(50% - min(50vw,540px));
-    background-image: url(/assets/images/common/voice-bg-ibaratatu.svg);
+    background-image: url(../images/common/voice-bg-ibaratatu.svg);
     background-size: cover;
     display: block;
     width: 100%;

@@ -5,23 +5,6 @@
 }
 
 .contact__section-inner.inner{
-  @include mq(md) {
-  //  padding: 0;
-  }
-}
-
-// .contact-section::before {
-//   content: "";
-//   background-size: 100%;
-//   display: block;
-//   top: 0;
-//   right: 0;
-//   width: 100%;
-//   padding-top: 20%;
-// }
-
-
-.contact__section-inner.inner{
   padding: 0 rem(40);
   @include mq(md) {
     padding: 0 rem(25);
@@ -44,12 +27,12 @@
 .contact__wrapper::after {
   position: absolute;
   content: "";
-  background-image: url(/assets/images/common/contact-fish.svg);
+  background-image: url(../images/common/contact-fish.svg);
   background-repeat: no-repeat;
     background-size: contain;
   max-width: rem(109);
   width: calc(109 / 375 * 100vw);
-  top: 7%;
+  top: 6.4%;
   right: calc(50% - min(50vw,170px));
   height: 100%;
   max-height: rem(50);
@@ -57,19 +40,16 @@
   @include mq(md) {
     top: -9.9%;
     right: calc(50% - min(50vw,670px));
-    // display: inline-block;
-    // width: 100%;
     width: calc(301 / 1440 * 100vw);
     max-width: rem(301);
     max-height: rem(138);
-    // box-sizing: border-box;
   }
   }
 
 .contact__wrapper-inner{
   @include mq(md) {
     display: flex;
-    padding-top: rem(85);
+    padding-top: rem(81);
     padding-bottom: rem(80);
     padding-left: rem(50);
     gap: rem(163);
@@ -103,8 +83,7 @@
 }
 
 .contact__logo {
-  padding-bottom: rem(6);
-  // overflow: hidden;
+  margin-bottom: rem(6);
   position: relative;
   display: flex;
   justify-content: center;
@@ -113,6 +92,8 @@
   @include mq(md) {
     aspect-ratio: 200 / 75;
     display: inline-block;
+    width: 100%;
+    max-width: rem(200);
   }
 }
 
@@ -123,7 +104,7 @@
   height: rem(1);
   width: 169.54%;
   background-color: #408F95;
-  bottom: 0;
+  bottom: rem(-4);
   @include mq(md) {
     display: none;
   }
@@ -139,16 +120,12 @@
   }
 }
 
-
-
 .contact-section__info-area {
   @include mq(md) {
     display: flex;
-    // flex-direction: column;
     position: relative;
     width: 100%;
-    // gap: rem(21);
-    padding-top: rem(31);
+    padding-top: rem(25);
   }
 }
 
@@ -160,12 +137,12 @@
     height: rem(1);
     width: 100%;
     background-color: #408F95;
-    top: rem(7);
+    top: 0;
   }
 }
 
 .contact__shop-info {
-  padding-top: rem(16);
+  padding-top: rem(14.4);
   text-align: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   white-space: nowrap;
@@ -182,6 +159,7 @@
   font-family: $ja-font-family;
   line-height: 1.5;
   letter-spacing: 0;
+  color: #0D2936;
 }
 
 .contact__shop-info p:not(:first-child){

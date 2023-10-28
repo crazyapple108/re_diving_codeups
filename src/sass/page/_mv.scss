@@ -2,7 +2,6 @@
 
 .mv {
   position: relative;
-  // height: 100vh;
 }
 
 .mv__inner {
@@ -17,11 +16,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  // @include mq(md) {
-  //   left: 51.6%;
-  //   top: 55.5%;
-  // }
 }
+
 .mv__section-title {
   font-size: clamp(rem(40),6vw,rem(80));
   letter-spacing: 0.54em;
@@ -36,6 +32,7 @@
     padding-left: rem(40);
   }
 }
+
 .mv__section-subtitle {
   text-align: center;
   font-family: $en-font-family;

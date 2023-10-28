@@ -7,6 +7,11 @@
   }
 }
 
+.sp-menu__main {
+  display: flex;
+  justify-content: center;
+}
+
 .sp-menu__toggle {
   position: absolute;
   top: -200px;
@@ -23,19 +28,16 @@
 .sp-menu__toggle:checked ~ .sp-menu__hamburger {
   .sp-menu__hamburger-line{
       background: transparent;
-      // opacity: 0;
   }
   .sp-menu__hamburger-line::before{
       top: 50%;
       transform: rotate(37deg);
       transition: all 0.5s ease;
-      // transform: translateY(20px) rotate(-45deg);
     }
   .sp-menu__hamburger-line::after{
       top: 50%;
       transform: rotate(-37deg);
       transition: all 0.5s ease;
-      // transform: translateY(-20px) rotate(45deg);
     }
 }
 
@@ -86,7 +88,6 @@
   height: calc(100vh - rem(80));
   height: 100vh;
   position: absolute;
-  // top: rem(80);
   padding-top: rem(67);
   top: 0;
   left: 0;

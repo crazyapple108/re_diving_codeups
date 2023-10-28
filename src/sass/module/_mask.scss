@@ -1,3 +1,5 @@
+@use 'global' as *;
+
 .mask{
 	animation-name:maskAnimeBase;
 	animation-duration:1s;
@@ -6,6 +8,16 @@
 	overflow: hidden;/*　はみ出た色要素を隠す　*/
 	opacity:0;
 }
+_::-webkit-full-page-media,
+_:future,
+:root .mask{
+	animation-name:maskAnimeBase;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	position: relative;
+	overflow: hidden;/*　はみ出た色要素を隠す　*/
+	opacity:0;
+	}
 
 @keyframes maskAnimeBase{
   from {
@@ -25,6 +37,15 @@
 	animation-fill-mode:forwards;
 	opacity: 0;
 }
+_::-webkit-full-page-media,
+_:future,
+:root .mask__inner{
+	animation-name:maskAnimeSecond;
+	animation-duration:1s;
+	animation-delay: 0.6s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+	}
 
 @keyframes maskAnimeSecond{
 	0% {
