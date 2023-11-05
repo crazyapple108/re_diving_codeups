@@ -2,10 +2,6 @@
 
 .blog-section {
   @include mq(md) {
-    background-image: url(../images/common/bg-blog.jpg);
-    background-size: 100% 60.4%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
     position: relative;
   }
 }
@@ -27,8 +23,26 @@
   }
 }
 
-.blog-section__inner.inner {
-  max-width: rem(1120);
+.blog-section::after {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/common/bg-blog.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+
+  }
+}
+
+.blog-section__inner.inner{
   padding-left: rem(20);
   padding-right: rem(20);
+  @include mq(md) {
+    padding-left: rem(25);
+    padding-right: rem(25);
+  }
 }

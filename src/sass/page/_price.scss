@@ -4,6 +4,10 @@
   background-color: #DDF0F1;
 }
 
+.price__section-inner{
+  max-width: rem(530);
+}
+
 .price__contents {
   margin-top: rem(28.8);
   @include mq(md) {
@@ -105,4 +109,5 @@
 
 .price__table td + td{
   text-align: right;
+  padding-left: rem(13.5);
 }

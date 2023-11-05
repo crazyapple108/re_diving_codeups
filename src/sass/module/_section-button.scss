@@ -19,10 +19,10 @@
 .section-button--about {
   margin-top: rem(50);
   @include mq(md) {
-    margin-top: rem(-18);
+    margin-top: rem(40);
     position: relative;
     z-index: 10;
-    margin-left: calc(50% + rem(55.6));
+    // margin-left: calc(50% + rem(55.6));
 }
   }
 

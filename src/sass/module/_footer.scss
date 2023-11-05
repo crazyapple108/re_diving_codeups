@@ -5,12 +5,12 @@
   position: relative;
 }
 
-.footer__inner.inner{
-  @include mq(md) {
-    padding-left: rem(25);
-    padding-right: rem(25);
-  }
-}
+// .footer__inner.inner{
+//   @include mq(md) {
+//     padding-left: rem(25);
+//     padding-right: rem(25);
+//   }
+// }
 
 .footer__head {
   @include mq(md) {
@@ -51,6 +51,11 @@
 .footer__list{
   position: relative;
   padding-left: rem(24);
+  transition: all 0.3s ease 0s;
+}
+
+.footer__list a:hover {
+  opacity: 0.5;
 }
 
 .footer__list-mark::before{

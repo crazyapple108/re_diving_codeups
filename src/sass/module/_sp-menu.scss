@@ -18,7 +18,8 @@
 }
 
 .sp-menu__toggle:checked ~ .sp-menu__wrapper {
- display: block;
+//  display: block;
+ right: 0;
 }
 
 .sp-menu__toggle:focus-visible ~ .sp-menu__hamburger {
@@ -83,15 +84,16 @@
 }
 
 .sp-menu__wrapper {
-  display: none;
+  // display: none;
   overflow-y: scroll;
-  height: calc(100vh - rem(80));
+  // height: calc(100vh - rem(80));
   height: 100vh;
   position: absolute;
   padding-top: rem(67);
   top: 0;
-  left: 0;
+  right: -120%;
   z-index: 900;
   width: 100%;
   background: #408F95;
+  transition: all 0.6s;
 }

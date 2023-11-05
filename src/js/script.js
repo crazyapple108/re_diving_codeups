@@ -6,13 +6,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
     clickable: true,
     loop: true,
+    effect: 'fade',
     loopAdditionalSlides: 1,
-    // autoplay: {
-    //   delay: 3000
-    // }
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    allowTouchMove: false,
   });
 
-  const mySwiper = new Swiper('.swiper-campaign', {
+  const mySwiper = new Swiper('.js-swiper-campaign', {
     slidesPerView: '1.2',
     spaceBetween: 24,
     loop: true,

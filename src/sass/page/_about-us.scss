@@ -10,7 +10,7 @@
   @include mq(md) {
     content: "";
     position: absolute;
-    bottom: 6.5%;
+    top:rem(821);
     right: calc(50% - min(50vw,rem(638)));
     background-image: url(../images/common/sango&isogin.png);
     background-size: cover;
@@ -29,9 +29,9 @@
 
 .about-us__section-inner.inner {
   @include mq(md) {
-    max-width: rem(1180);
-    padding-left: rem(50);
-    padding-right: rem(50);
+    max-width: rem(1130);
+    // padding-left: rem(50);
+    // padding-right: rem(50);
     
   }
 }
@@ -101,7 +101,7 @@
   @include mq(md) {
     padding-top: 19%;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     margin-top: rem(42);
   }
@@ -111,7 +111,7 @@
   @include mq(md) {
     position: absolute;
     content: "";
-    background-image: url(../images/common/about-us1.jpg);
+    background-image: url(../images/common/about-us-pc1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: rem(400);
@@ -125,7 +125,7 @@
   @include mq(md) {
     position: absolute;
     content: "";
-    background-image: url(../images/common/about-us2.jpg);
+    background-image: url(../images/common/about-us-pc2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: rem(880);
@@ -163,7 +163,7 @@
   @include mq(md) {
     color: #fff;
     width: 40.4%;
-    margin-top: rem(-64);
+    margin-top: rem(-5);
     z-index: 10;
     padding-left: rem(40);
     padding-top: 0;

@@ -1,8 +1,21 @@
 @use 'global' as *;
-
-.swiper.js-mv-swiper img {
+.mv-swiper .swiper-slide{
+  width: 100%;
   height: 100vh;
+  // height: calc(100vw * 0.56);
+  // // object-fit: cover;
+  // @include mq(md) {
+  //   height: calc(100vw * 0.52);
+  // }
+}
+
+.mv-swiper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  // overflow: hidden;
+  object-fit: cover;
  }
+
 
 // :root {
 //   --easing: cubic-bezier(.2, 1, .2, 1);
@@ -162,8 +175,8 @@ html {
 //   overflow: hidden;
 // }
 
-.swiper-campaign {
-  // overflow: hidden;
+.js-swiper-campaign {
+  overflow: hidden;
   position: relative;
   margin-top: rem(30);
   padding-left: rem(2);
@@ -174,7 +187,7 @@ html {
   }
 }
 
-.swiper-campaign.swiper-wrapper {
+.js-swiper-campaign.swiper-wrapper {
   overflow: hidden;
 }
 
