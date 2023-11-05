@@ -21,6 +21,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     loop: true,
     grabCursor: true, // カーソルを置いたときに指のカーソルを表示
+    allowTouchMove: true,
     navigation: {
       nextEl: '.swiper-campaign-button-prev',
       prevEl: '.swiper-campaign-button-next',
