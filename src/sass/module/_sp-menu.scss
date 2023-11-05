@@ -18,7 +18,6 @@
 }
 
 .sp-menu__toggle:checked ~ .sp-menu__wrapper {
-//  display: block;
  right: 0;
 }
 
@@ -84,9 +83,7 @@
 }
 
 .sp-menu__wrapper {
-  // display: none;
   overflow-y: scroll;
-  // height: calc(100vh - rem(80));
   height: 100vh;
   position: absolute;
   padding-top: rem(67);

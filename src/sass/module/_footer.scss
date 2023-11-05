@@ -5,13 +5,6 @@
   position: relative;
 }
 
-// .footer__inner.inner{
-//   @include mq(md) {
-//     padding-left: rem(25);
-//     padding-right: rem(25);
-//   }
-// }
-
 .footer__head {
   @include mq(md) {
     display: flex;

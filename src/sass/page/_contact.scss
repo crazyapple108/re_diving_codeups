@@ -4,13 +4,6 @@
   position: relative;
 }
 
-.contact__section-inner.inner{
-  // padding: 0 rem(40);
-  // @include mq(md) {
-  //   padding: 0 rem(25);
-  // }
-}
-
 .contact__wrapper{
   @include mq(md) {
     margin: 0 auto;

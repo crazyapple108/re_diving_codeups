@@ -30,9 +30,6 @@
 .about-us__section-inner.inner {
   @include mq(md) {
     max-width: rem(1130);
-    // padding-left: rem(50);
-    // padding-right: rem(50);
-    
   }
 }
 
@@ -101,7 +98,6 @@
   @include mq(md) {
     padding-top: 19%;
     display: flex;
-    // align-items: center;
     justify-content: center;
     margin-top: rem(42);
   }
