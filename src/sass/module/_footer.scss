@@ -13,6 +13,7 @@
 }
 .footer__sns-area {
   display: flex;
+  flex-basis: 50%;
   gap: rem(16);
   padding-top: rem(16);
   @include mq(md) {
