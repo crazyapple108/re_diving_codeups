@@ -40,12 +40,14 @@
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  margin-top: rem(16);
+  margin-top: rem(8);
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
   min-height: rem(120);
+  border-top: 2px solid #408F95;
+  padding-top: rem(15);
 }
 
 .blog-card__wrapper {
@@ -54,6 +56,7 @@
   justify-content: center;
   margin-top: rem(28);
   box-sizing: border-box;
+  gap: rem(34);
   @include mq(md) {
     grid-template-columns: repeat(3, 1fr);
     margin-top: rem(80);
@@ -66,9 +69,9 @@
   transform: translateY(rem(-20));
 }
 
-.blog-card__wrapper .blog-card:not(:first-child) {
-  margin-top: rem(40);
-  @include mq(md) {
-    margin-top: initial;
-  }
-}
+// .blog-card__wrapper .blog-card:not(:first-child) {
+//   margin-top: rem(40);
+//   @include mq(md) {
+//     margin-top: initial;
+//   }
+// }

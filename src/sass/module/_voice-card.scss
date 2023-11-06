@@ -96,11 +96,14 @@
   font-size: rem(16);
   line-height: 1.5;
   color: #0D2936;
+  min-height: rem(168);
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+@include mq(md) {
   -webkit-line-clamp: 7;
-  min-height: rem(168);
+}
 }
 
 .voice-card__wrapper {
