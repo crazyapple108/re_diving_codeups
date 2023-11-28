@@ -115,7 +115,7 @@
   position: relative;
   @include mq(md) {
     flex-direction: initial;
-    margin-top: rem(37);
+    margin-top: rem(32);
     gap: rem(40);
   }
 }
@@ -124,7 +124,7 @@
    @include mq(md) {
     content: "";
     position: absolute;
-    top: -54%;
+    top: -55.6%;
     left: calc(50% - min(50vw,620px));
     background-image: url(../images/common/voice-bg-fish.svg);
     background-size: cover;

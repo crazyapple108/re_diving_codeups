@@ -30,12 +30,13 @@
   font-size: rem(16);
   font-weight: 700;
   line-height: 1.125;
+  display: block;
 }
 
 .main-list__item-link br {
   content: "";
   display: block;
-  margin-top: rem(-7);
+  // margin-top: rem(-7);
   @include mq(md) {
     display: none;
   }

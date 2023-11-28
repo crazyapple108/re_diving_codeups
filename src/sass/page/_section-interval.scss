@@ -1,73 +1,69 @@
 @use 'global' as *;
 
 .section-interval {
-  padding: rem(80) 0;
+  margin-top: rem(80);
   @include mq(md) {
-    padding: rem(100) 0;
+    margin-top: rem(100);
   }
 }
 
+.section-interval--short {
+  margin-top: rem(70);
+}
+
 .section-interval--blog {
-  padding-top: rem(86);
+  margin-top: rem(86);
   @include mq(md) {
-    padding-top: rem(100);
+    margin-top: rem(0);
   }
 }
 
 .section-interval--voice {
-  padding-top: rem(88);
-  padding-bottom: rem(83.2);
+  margin-top: rem(86);
+  // padding-bottom: rem(83.2);
   @include mq(md) {
-    padding-top: rem(143);
-    padding-bottom: rem(145);
+    margin-top: rem(146);
   }
 }
 
 .section__interval--campaign {
-  padding-top: rem(45);
+  margin-top: rem(45);
   @include mq(md) {
-    padding-top: rem(120);
+    margin-top: rem(120);
   }
 }
 
 .section-interval--about-us {
-  padding-top: rem(88);
-  padding-bottom: rem(75);
+  margin-top: rem(88);
+  // padding-bottom: rem(75);
   @include mq(md) {
-    padding-top: rem(144);
-    padding-bottom: rem(384);
+    margin-top: rem(144);
+    // padding-bottom: rem(384);
   }
 }
 
-.section-interval.section-interval--information {
-  padding-top: rem(83);
-  padding-bottom: rem(82);
-  @include mq(md) {
-    padding-top: rem(102);
-  }
+.section-interval--information {
+  margin-top: rem(75);
+    @include mq(md) {
+    margin-top: rem(162);
+    }
 }
 
 .section-interval--price {
-  padding: rem(86) 0;
   @include mq(md) {
-    padding-top: rem(100);
-    padding-bottom: rem(103);
+    margin-top: rem(142);
   }
 }
 
 .section-interval__contact {
-  padding-top: rem(80);
-  padding-bottom: rem(104);
   @include mq(md) {
-    padding-top: rem(141);
-    padding-bottom: rem(159);
+    margin-top: rem(141);
   }
 }
 
 .section-interval__footer {
-  padding-top: rem(48);
-  padding-bottom: rem(56);
+  margin-top: rem(106);
   @include mq(md) {
-    padding: rem(80) 0;
+    margin-top: rem(160);
   }
 }

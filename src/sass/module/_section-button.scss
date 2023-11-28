@@ -2,8 +2,7 @@
 
 .section-button {
   margin-top: rem(40);
-  display: flex;
-  justify-content: center;
+  text-align: center;
   @include mq(md) {
     margin-top: rem(80);
   }
@@ -38,6 +37,7 @@
   }
 }
 .section-button--contact {
+  margin-top: rem(35);
   @include mq(md) {
     margin-top: rem(40);
   }

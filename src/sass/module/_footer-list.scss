@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.footer-list__1 {
+  grid-area: a;
+}
+.footer-list__2 {
+  grid-area: b;
+}
+.footer-list__3 {
+  grid-area: c;
+  @include mq(md) {
+    margin-left: rem(-16);
+  }
+}
+.footer-list__4 {
+  grid-area: d;
+  @include mq(md) {
+    margin-left: rem(-32);
+  }
+}

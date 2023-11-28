@@ -21,15 +21,16 @@
 .mv__section-title {
   font-size: clamp(rem(40),6vw,rem(80));
   letter-spacing: 0.54em;
-  padding-left: rem(20);
+  // padding-left: rem(20);
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   white-space: nowrap;
   line-height: 1.2;
+  text-indent: 0.54em;
   @include mq(md) {
     line-height: 1.25em;
-    padding-left: rem(40);
+    // padding-left: rem(40);
   }
 }
 

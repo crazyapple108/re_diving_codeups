@@ -1,5 +1,16 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+
+  $(".sp-menu__hamburger").click(function () {
+    // ハンバーガーボタンclass付け外し
+    $(this).toggleClass("active");
+    // メニューにclass付け外し
+    // $(".drawer__nav").toggleClass("active");
+    // bodyにclass付け外し
+    $("body").toggleClass("active");
+    $(".header__inner").toggleClass("active");
+  });
+
   var swiper = new Swiper(".js-mv-swiper", {
     pagination: {
       el: ".js-works-pagination"
@@ -16,22 +27,32 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     allowTouchMove: false,
   });
 
-  const mySwiper = new Swiper('.js-swiper-campaign', {
-    slidesPerView: '1.2',
+  const mySwiper = new Swiper('#js-swiper-campaign', {
+    direction: 'horizontal',
     spaceBetween: 24,
+    breakpoints: {
+      768: {
+        // slidesPerView: "3.5",
+        spaceBetween: 40,
+        // width: 1260,
+      }
+    },
+
+    slidesPerView: 'auto',
     loop: true,
+    freeMode: true,
+    freeModeSticky:true,
     grabCursor: true, // カーソルを置いたときに指のカーソルを表示
+    // loopAdditionalSlides: 1,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 1000,
     allowTouchMove: true,
     navigation: {
       nextEl: '.swiper-campaign-button-prev',
       prevEl: '.swiper-campaign-button-next',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: "3.5",
-        spaceBetween: 40,
-        width: 1260,
-      }
     },
   });
 

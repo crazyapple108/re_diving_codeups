@@ -1,10 +1,8 @@
 @use 'global' as *;
 
 .section-title {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: rem(6);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .section-title__main {
@@ -19,9 +17,14 @@
   }
 }
 
-.section-title__main span {
+.section-title__main::first-letter{
   color: #408f95;
-  text-transform: capitalize;
+}
+
+.section-title__main--blog::first-letter{
+  @include mq(md) {
+    color: #fff;
+  }
 }
 
 .section-title__sub {
@@ -29,16 +32,10 @@
   font-size: rem(12);
   line-height: 1.5;
   color: #408F95;
+  margin-top: rem(9);
 }
-
 
 .section-title__main--blog {
-  @include mq(md) {
-    color: #fff;
-  }
-}
-
-.section-title__main--blog span{
   @include mq(md) {
     color: #fff;
   }

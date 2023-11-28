@@ -1,5 +1,9 @@
 @use 'global' as *;
 
-.campaogn__section-inner.inner {
+.campaign__inner.inner {
   position: relative;
+  max-width: rem(630);
+  @include mq(md) {
+    max-width: rem(1130);
+  }
 }

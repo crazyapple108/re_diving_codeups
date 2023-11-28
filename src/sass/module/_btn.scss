@@ -3,11 +3,20 @@
 .btn {
   position: relative;
   width: 100%;
-  max-width: rem(199);
+  max-width: rem(202);
   background-color: #408F95;
   height: 100%;
-  max-height: rem(53);
+  max-height: rem(54);
   outline: 1px solid #408F95;
+  color: #FFF;
+  padding: rem(16) rem(88) rem(16) rem(37);
+  font-size: rem(14);
+  font-family: $en-font-family;
+  font-weight: 300;
+  white-space: nowrap;
+  // z-index: 3;
+  transition:all .5s ease;
+  display: inline-block;
 }
 
 .btn::after {
@@ -21,26 +30,19 @@
 	border: 1px solid #408f95;
 }
 
-.btn a{
-  display: flex;
-  align-items: center;
-  width: inherit;
-  height: inherit;
+.btn p{
+  display: inline-block;
   position: relative;
-  color: #FFF;
-  padding: rem(16) rem(88) rem(16) rem(37);
-  font-size: rem(14);
-  font-family: $en-font-family;
-  font-weight: 300;
-  white-space: nowrap;
-  z-index: 3;
+  padding-right:rem(88);
+  z-index: 10;
+  
 }
 
-.btn a span{
+.btn p span{
   text-transform: capitalize;
 }
 
-.btn a::after {
+.btn p::before {
   content: "";
   display: block;
   position: absolute;
@@ -52,16 +54,18 @@
   border-right: 2px solid #FFF;
   border-bottom: 1px solid #FFF;
   transform: translateY(-50%) skew(45deg);
+  z-index: 10;
+  transition:all .5s ease;
 }
 
-.btn a:hover {
+.btn:hover {
   color: #408F95;
 }
 
-.btn a:hover::after {
+.btn:hover p:before {
   border-right: 2px solid #408F95;
   border-bottom: 1px solid #408F95;
-  z-index: 3;
+  z-index: 10;
 }
 
 .btn__mask::before {

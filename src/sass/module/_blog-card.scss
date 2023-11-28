@@ -23,7 +23,7 @@
 }
 
 .blog-card__body{
-  margin-top: rem(24);
+  margin-top: rem(27);
 }
 
 .blog-card__date{
@@ -40,13 +40,13 @@
   font-weight: normal;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  margin-top: rem(8);
+  margin-top: rem(4);
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
   min-height: rem(120);
-  border-top: 2px solid #408F95;
+  border-top: 1px solid #408F95;
   padding-top: rem(15);
 }
 
@@ -54,9 +54,9 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-top: rem(28);
+  margin-top: rem(24);
   box-sizing: border-box;
-  gap: rem(34);
+  gap: rem(41);
   @include mq(md) {
     grid-template-columns: repeat(3, 1fr);
     margin-top: rem(80);

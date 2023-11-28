@@ -86,8 +86,8 @@
   overflow-y: scroll;
   height: 100vh;
   position: absolute;
-  padding-top: rem(67);
-  top: 0;
+  // padding-top: rem(67);
+  top: rem(67);
   right: -120%;
   z-index: 900;
   width: 100%;

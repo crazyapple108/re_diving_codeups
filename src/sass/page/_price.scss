@@ -6,12 +6,17 @@
 
 .price__section-inner{
   max-width: rem(530);
+  padding: rem(86) 0;
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(103);
+  }
 }
 
 .price__contents {
   margin-top: rem(28.8);
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(35);
     display: flex;
     flex-direction: row-reverse;
     gap: rem(93);
@@ -93,7 +98,7 @@
   width: 100%;
   background-color: #408F95;
   height: rem(1);
-  bottom: rem(-3);
+  bottom: rem(-5);
 }
 
 .price__table td {
