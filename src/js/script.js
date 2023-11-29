@@ -32,12 +32,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     breakpoints: {
       768: {
-        // slidesPerView: "3.5",
         spaceBetween: 40,
-        // width: 1260,
       }
     },
-
     slidesPerView: 'auto',
     loop: true,
     freeMode: true,
