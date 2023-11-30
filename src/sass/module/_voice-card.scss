@@ -115,7 +115,7 @@
   position: relative;
   @include mq(md) {
     flex-direction: initial;
-    margin-top: rem(32);
+    margin-top: rem(28);
     gap: rem(40);
   }
 }
@@ -124,8 +124,8 @@
    @include mq(md) {
     content: "";
     position: absolute;
-    top: -55.6%;
-    left: calc(50% - min(50vw,620px));
+    top: -54.8%;
+    left: calc(50% - min(48vw,620px));
     background-image: url(../images/common/voice-bg-fish.svg);
     background-size: cover;
     display: block;
@@ -141,7 +141,7 @@
      content: "";
     position: absolute;
     bottom: -52%;
-    right:  calc(50% - min(50vw,540px));
+    right:  calc(50% - min(48vw,540px));
     background-image: url(../images/common/voice-bg-ibaratatu.svg);
     background-size: cover;
     display: block;

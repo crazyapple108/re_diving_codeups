@@ -17,6 +17,10 @@
   }
 }
 
+.section-title__main span {
+  text-transform: lowercase;
+}
+
 .section-title__main::first-letter{
   color: #408f95;
 }
@@ -50,9 +54,9 @@
 
 .section-title--contact {
   gap: rem(0);
-  @include mq(md) {
-    margin-top: rem(-10);
-  }
+  // @include mq(md) {
+  //   margin-top: rem(-10);
+  // }
 }
 
 .section-title__sub--contact {

@@ -19,7 +19,7 @@
 }
 
 .section-interval--voice {
-  margin-top: rem(86);
+  margin-top: rem(90);
   // padding-bottom: rem(83.2);
   @include mq(md) {
     margin-top: rem(146);
@@ -45,13 +45,14 @@
 .section-interval--information {
   margin-top: rem(75);
     @include mq(md) {
-    margin-top: rem(162);
+    margin-top: rem(166);
     }
 }
 
 .section-interval--price {
+  margin-top: rem(84);
   @include mq(md) {
-    margin-top: rem(142);
+    margin-top: rem(145);
   }
 }
 

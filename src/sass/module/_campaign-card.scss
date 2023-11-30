@@ -20,6 +20,9 @@
 .campaign-card__img{
   overflow: hidden;
   aspect-ratio: 280 / 188;
+  @include mq(md) {
+    aspect-ratio: 333 / 223;
+  }
 }
 
 .campaign-card__img img{
@@ -38,7 +41,7 @@
   flex-direction: column;
   flex-grow: 1;
   @include mq(md) {
-    padding-top: rem(24);
+    padding-top: rem(22);
     padding-bottom: rem(40);
   }
 }
@@ -58,6 +61,9 @@
   padding-bottom: rem(8);
   margin-top: rem(5);
   flex-grow: 1;
+  @include mq(md) {
+    margin-top: rem(7);
+  }
 }
 
 .campaign-card__price-body {
@@ -89,8 +95,8 @@
   @include mq(md) {
     font-size: rem(16);
     letter-spacing: 0.05em;
-    padding-top: rem(17);
-    margin-top: rem(10);
+    // padding-top: rem(17);
+    margin-top: rem(17);
   }
 }
 

@@ -40,7 +40,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     freeMode: true,
     freeModeSticky:true,
     grabCursor: true, // カーソルを置いたときに指のカーソルを表示
-    // loopAdditionalSlides: 1,
+    loopAdditionalSlides: 1,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
