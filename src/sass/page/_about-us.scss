@@ -42,10 +42,7 @@
   left: 0;
   right: 0;
   @include mq(md) {
-    // top: rem(106);
     margin-top: rem(36);
-    // left: 50%;
-    // transform: translateX(-50%);
   }
 }
 
@@ -71,8 +68,6 @@
 }
 
 .about-us__right-img {
-  // position: absolute;
-  // top: rem(26);
   margin-top: -48.5%;
   margin-left: auto;
   width: max(74.9333vw, rem(281));
@@ -94,9 +89,6 @@
 }
 
 .about-us__contents{
-  // position: relative;
-  // z-index: 5;
-  // padding-top: 62%;
   margin-top: rem(40);
   @include mq(md) {
     position: absolute;
@@ -114,35 +106,6 @@
   }
 }
 
-// .about-us__contents::before{
-//   @include mq(md) {
-//     position: absolute;
-//     content: "";
-//     background-image: url(../images/common/about-us-pc1.jpg);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width: rem(400);
-//     height: rem(606);
-//     top: 0;
-//     left: 0;
-//   }
-// }
-
-// .about-us__contents::after{
-//   @include mq(md) {
-//     position: absolute;
-//     content: "";
-//     background-image: url(../images/common/about-us-pc2.jpg);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width: rem(880);
-//     height: rem(581);
-//     top: rem(80);
-//     right: 0;
-//     z-index: -1;
-//   }
-// }
-
 .about-us__head{
   font-family: $en-font-family;
   font-size: rem(40);
@@ -152,10 +115,6 @@
     font-size: rem(80);
     line-height: 1.25;
     color: #fff;
-    // padding-top: 0;
-    // z-index: 10;
-    // width: 37.1%;
-    // margin-left: 14.5%;
     white-space: nowrap;
   }
 }
@@ -168,10 +127,6 @@
   margin-top: rem(16);
   @include mq(md) {
     color: #fff;
-    // width: 40.4%;
     margin-top: rem(33);
-    // z-index: 10;
-    // padding-left: rem(40);
-    // padding-top: 0;
   }
 }

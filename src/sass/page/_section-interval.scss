@@ -20,7 +20,6 @@
 
 .section-interval--voice {
   margin-top: rem(90);
-  // padding-bottom: rem(83.2);
   @include mq(md) {
     margin-top: rem(146);
   }
@@ -35,10 +34,8 @@
 
 .section-interval--about-us {
   margin-top: rem(88);
-  // padding-bottom: rem(75);
   @include mq(md) {
     margin-top: rem(144);
-    // padding-bottom: rem(384);
   }
 }
 
