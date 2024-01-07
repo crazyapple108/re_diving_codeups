@@ -44,7 +44,7 @@
   @include mq(md) {
     max-width: 100%;
     padding-left: 2.8%;
-    padding-right: 2.8%;
+    padding-right: 1.5%;
   }
 }
 
@@ -72,8 +72,6 @@ height: 100%;
 object-fit: cover;
 }
 
-
-
 .header__pc-menu{
   display: none;
   @include mq(md) {
@@ -88,17 +86,3 @@ object-fit: cover;
     height: inherit;
   }
 }
-
-.header__main-menu-list li:not(:first-child) {
-  padding-left: clamp(rem(8),1.3888888vw,rem(20));
-  padding-right: clamp(rem(8),1.3888888vw,rem(20));
-}
-
-.header__main-menu-list li:nth-child(2) {
-  padding-left: clamp(rem(8),2.777778vw,rem(40));
-}
-
-.header__main-menu-list li:last-child {
-  padding-right: 0;
-}
-

@@ -16,7 +16,7 @@
 .price__contents {
   margin-top: rem(28.8);
   @include mq(md) {
-    margin-top: rem(35);
+    margin-top: rem(40);
     display: flex;
     flex-direction: row-reverse;
     gap: rem(93);
@@ -42,9 +42,9 @@
 }
 
 .price__rate-sheet {
-  margin-top: rem(36);
+  margin-top: rem(38);
   @include mq(md) {
-    margin-top: initial;
+    margin-top: rem(0);
     flex: 1 1 rem(492);
     position: relative;
   }
@@ -67,22 +67,7 @@
   }
 }
 
-.price__rate-sheet .price__table:not(:first-child){
-  margin-top: rem(35);
-  @include mq(md) {
-    margin-top: rem(37);
-  }
-}
-
-.price__table {
-  width: 100%;
-}
-
-.price__table th:first-child {
-  padding-top: 0;
-}
-
-.price__table th{
+.price__rate-sheet-title {
   font-size: rem(16);
   font-family: $ja-font-family;
   line-height: 1.5;
@@ -91,28 +76,63 @@
   position: relative;
 }
 
-.price__table th::after{
+.price__rate-sheet-title::after{
   content: "";
   display: block;
   position: absolute;
   width: 100%;
   background-color: #408F95;
   height: rem(1);
-  bottom: rem(-4);
+  bottom: rem(-5);
+
 }
 
-.price__table td {
-  font-size: rem(14);
-  color: #0D2936;
-  padding-top: rem(9);
+.price__rate-sheet-title:nth-of-type(n+2){
+  margin-top: rem(38);
   @include mq(md) {
-    font-size: rem(16);
-    line-height: 1;
-    padding-top: rem(13.7);
+    margin-top: rem(40);
   }
 }
 
-.price__table td + td{
-  text-align: right;
-  padding-left: rem(13.5);
+.price__rate-sheet dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.price__rate-sheet dt{
+  font-size: rem(14);
+  color: #0D2936;
+  margin-top: rem(11);
+  width: 73%;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.5;
+    margin-top: rem(8);
+  }
+}
+
+.price__rate-sheet dl dt:first-child{
+  margin-top: rem(14);
+  @include mq(md) {
+    margin-top: rem(12);
+  }
+}
+
+.price__rate-sheet dd{
+  font-size: rem(14);
+  color: #0D2936;
+  margin-top: rem(12);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.5;
+    margin-top: rem(8);
+  }
+}
+
+.price__rate-sheet dl dt:first-child + dd{
+  margin-top: rem(14);
+  @include mq(md) {
+    margin-top: rem(12);
+  }
 }
