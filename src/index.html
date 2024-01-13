@@ -59,13 +59,13 @@
           <a class="logo__link" href="index.html">
             <img src="assets/images/common/logo.svg" alt="codeups"
             width="102"
-            height="38"
+            height="50"
             decoding="async" />
           </a>
         </h1>
 
         <div class="header__sp-menu sp-menu">
-          <input id="nav-toggle" type="checkbox" class="sp-menu__toggle" />
+          <input id="nav-toggle" type="checkbox" class="sp-menu__toggle"/>
           <label for="nav-toggle" class="sp-menu__hamburger">
             <span class="sp-menu__hamburger-line"></span>
           </label>
@@ -317,7 +317,7 @@
         </div>
       </section>
 
-      <section class="campaign section__interval--campaign" id="campaign">
+      <section class="campaign top-campaign" id="campaign">
         <div class="campaign__inner inner">
           <div class="section-title">
             <h2 class="section-title__main">campaign</h2>
@@ -471,10 +471,9 @@
       </section>
       <!-- about us -->
       <section
-        class="about-us__section section-interval section-interval--about-us"
-        id="about-us"
-      >
-        <div class="about-us__section-inner inner">
+        class="about-us top-about-us"
+        id="about-us">
+        <div class="about-us-inner inner">
           <div class="section-title">
             <h2 class="section-title__main">about <span>us</span></h2>
             <p class="section-title__sub">私たちについて</p>
@@ -568,7 +567,7 @@
         </div>
       </section>
       <!-- blog-section -->
-      <section class="blog-section section-interval--blog" id="blog">
+      <!-- <section class="blog-section section-interval--blog" id="blog">
         <div class="blog-section__inner inner">
           <div class="section-title">
             <h2 class="section-title__main section-title__main--blog">
@@ -647,19 +646,96 @@
             </a>
           </div>
         </div>
-      </section>
+      </section> -->
+      <section class="blog top-blog" id="blog">
+        <div class="blog__inner inner">
+          <div class="section-title">
+            <h2 class="section-title__main section-title__main--blog">
+              blog
+            </h2>
+            <p class="section-title__sub section-title__sub--blog">ブログ</p>
+          </div><!-- /.section-title -->
+          <div class="blog-cards">
+            <a href="#" class="blog-cards__item blog-card">
+              <div class="blog-card__inner">
+                <div class="blog-card__img">
+                  <img
+                    src="./assets/images/common/blog-img1.jpg"
+                    alt="珊瑚の写真"
+                    width="301"
+                    height="201"
+                    decoding="async"
+                  />
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__date">2023.11/17</p>
+                  <h3 class="blog-card__title card__title card__title--blog">ライセンス取得</h3>
+                  <p class="blog-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="blog-cards__item blog-card">
+              <div class="blog-card__inner">
+                <div class="blog-card__img">
+                  <img
+                    src="./assets/images/common/blog-img2.jpg"
+                    alt="ウミガメの写真"
+                    width="301"
+                    height="201"
+                    decoding="async"
+                  />
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__date">2023.11/17</p>
+                  <h3 class="blog-card__title card__title card__title--blog">ウミガメと泳ぐ</h3>
+                  <p class="blog-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="blog-cards__item blog-card">
+              <div class="blog-card__inner">
+                <div class="blog-card__img">
+                  <img
+                    src="./assets/images/common/blog-img3.jpg"
+                    alt="カクレクマノミの写真"
+                    width="301"
+                    height="201"
+                    decoding="async"
+                  />
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__date">2023.11/17</p>
+                  <h3 class="blog-card__title card__title card__title--blog">カクレクマノミ</h3>
+                  <p class="blog-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.blog-cards -->
+          <div class="section-button">
+            <a href="" class="btn btn__mask">
+              <p><span>v</span>iew more</p>
+            </a>
+          </div>
+        </div><!-- /.blog__inner -->
+      </section><!-- /blog -->
       <!-- voice-section -->
-      <section
-        class="voice__section section-interval section-interval--voice"
-        id="voice"
-      >
-        <div class="voice-section__inner inner">
+      <section class="voice top-voice" id="voice">
+        <div class="voice__inner inner">
           <div class="section-title">
             <h2 class="section-title__main">voice</h2>
             <p class="section-title__sub">お客様の声</p>
           </div>
-          <div class="voice-card__wrapper">
-            <a href="#" class="voice-card">
+          <div class="voice-cards">
+            <a href="#" class="voice-cards__item voice-card">
               <div class="voice-card__inner">
                 <div class="voice-card__head">
                   <div class="voice-card__heading">
@@ -694,7 +770,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="voice-card">
+            <a href="#" class="voice-cards__item voice-card">
               <div class="voice-card__inner">
                 <div class="voice-card__head">
                   <div class="voice-card__heading">
@@ -738,17 +814,14 @@
         </div>
       </section>
       <!-- price-section -->
-      <section
-        class="price__section section-interval section-interval--price"
-        id="price"
-      >
-        <div class="price__section-inner inner">
+      <section class="price top-price" id="price">
+        <div class="price__inner inner">
           <div class="section-title">
             <h2 class="section-title__main">price</h2>
             <p class="section-title__sub">料金一覧</p>
           </div>
           <div class="price__contents">
-            <div class="price__img-area mask js-mask">
+            <div class="price__content price__img-area mask js-mask">
               <span class="js-mask__inner">
                 <picture>
                   <source
@@ -765,7 +838,7 @@
                 </picture>
               </span>
             </div>
-            <div class="price__rate-sheet">
+            <div class="price__content price__rate-sheet">
               <h3 class="price__rate-sheet-title">ライセンス講習</h3><!-- /.price__rate-sheet-title -->
               <dl>
                   <dt>オープンウォーターダイバーコース</dt>
@@ -815,10 +888,8 @@
       </section>
       <!-- contact-section -->
       <section
-        class="contact__section section-interval section-interval__contact"
-        id="contact"
-      >
-        <div class="contact__section-inner inner">
+        class="contact top-contact" id="contact">
+        <div class="contact__inner inner">
           <div class="contact__wrapper">
             <div class="contact__wrapper-inner">
               <div class="contact__contents">
@@ -874,13 +945,13 @@
       </section>
     </main>
 
-    <footer class="footer section-interval section-interval__footer" id="footer">
+    <footer class="footer top-footer" id="footer">
       <div class="footer__inner inner">
         <div class="footer__head">
-          <div class="footer__logo logo__footer">
+          <div class="footer__logo">
             <a href="#">
               <img
-                class="logo__link"
+                class="footer__logo-link"
                 src="assets/images/common/logo.svg"
                 alt="CodeUps"
                 width="120"
@@ -889,8 +960,8 @@
               />
             </a>
           </div>
-          <ul class="footer__sns-area">
-            <li class="sns-icon">
+          <ul class="footer__sns-icons">
+            <li class="footer__sns-icon sns-icon">
               <a
                 href="https://www.facebook.com/ryousuke.shiina.1"
                 target="_blank"
@@ -905,7 +976,7 @@
                 />
               </a>
             </li>
-            <li class="sns-icon">
+            <li class="footer__sns-icon sns-icon">
               <a
                 href="https://www.instagram.com/crazyapple108/"
                 target="_blank"

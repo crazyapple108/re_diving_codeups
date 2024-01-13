@@ -1,14 +1,14 @@
 @use 'global' as *;
 
-.contact__section {
+.contact {
   position: relative;
 }
 
-.contact__section-inner {
+.contact__inner {
   max-width: rem(530);
 }
 
-.contact__section-inner.inner {
+.contact__inner.inner {
   padding-left: rem(30);
   padding-right: rem(30);
   @include mq(md) {

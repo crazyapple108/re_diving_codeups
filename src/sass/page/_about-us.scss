@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.about-us__section {
+.about-us {
   @include mq(md) {
    position: relative;
   }
 }
 
-.about-us__section::before {
+.about-us::before {
   @include mq(md) {
     content: "";
     position: absolute;
@@ -23,11 +23,11 @@
   }
 }
 
-.about-us__section-inner {
+.about-us-inner {
   position: relative;
 }
 
-.about-us__section-inner.inner {
+.about-us-inner.inner {
   @include mq(md) {
     max-width: rem(1130);
   }
