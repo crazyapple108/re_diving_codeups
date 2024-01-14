@@ -168,55 +168,55 @@
             </div><!-- /.sp-menu__wrapper sp-menu__wrapper--right-->
           </nav>
         </div>
-
-        <div class="header__pc-menu">
-          <nav class="header__pc-menu-main main-menu">
-            <ul class="header__main-menu-list">
-              <li class="main-menu__item">
-                <a href="#campaign" class="main-menu__link">
-                  <div class="main-menu__label">Campaign</div>
+f
+        <div class="header__pc-menu pc-menu">
+          <nav class="pc-menu__items">
+            <ul class="pc-menu__item-list">
+              <li class="main-menu__item pc-menu__item">
+                <a href="#campaign" class="pc-menu__link">
+                  <div class="pc-menu__label">Campaign</div>
                   キャンペーン
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a href="#about-us" class="main-menu__link">
-                  <div class="main-menu__label">About us</div>
+              <li class="pc-menu__item">
+                <a href="#about-us" class="pc-menu__link">
+                  <div class="pc-menu__label">About us</div>
                   私たちについて
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a href="#information" class="main-menu__link">
-                  <div class="main-menu__label">Information</div>
+              <li class="pc-menu__item">
+                <a href="#information" class="pc-menu__link">
+                  <div class="pc-menu__label">Information</div>
                   ダイビング情報
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a href="#blog" class="main-menu__link">
-                  <div class="main-menu__label">Blog</div>
+              <li class="pc-menu__item">
+                <a href="#blog" class="pc-menu__link">
+                  <div class="pc-menu__label">Blog</div>
                   ブログ
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a href="#voice" class="main-menu__link">
-                  <div class="main-menu__label">Voice</div>
+              <li class="pc-menu__item">
+                <a href="#voice" class="pc-menu__link">
+                  <div class="pc-menu__label">Voice</div>
                   お客様の声
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a href="#price" class="main-menu__link">
-                  <div class="main-menu__label">Price</div>
+              <li class="pc-menu__item">
+                <a href="#price" class="pc-menu__link">
+                  <div class="pc-menu__label">Price</div>
                   料金一覧
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a href="#" class="main-menu__link">
-                  <div class="main-menu__label">FAQ</div>
+              <li class="pc-menu__item">
+                <a href="#" class="pc-menu__link">
+                  <div class="pc-menu__label">FAQ</div>
                   よくある質問
                 </a>
               </li>
-              <li class="main-menu__item">
-                <a href="#contact" class="main-menu__link">
-                  <div class="main-menu__label">Contact</div>
+              <li class="pc-menu__item">
+                <a href="#contact" class="pc-menu__link">
+                  <div class="pc-menu__label">Contact</div>
                   お問合わせ
                 </a>
               </li>
@@ -318,7 +318,7 @@
 
       <section class="campaign top-campaign" id="campaign">
         <div class="campaign__inner inner">
-          <div class="section-title">
+          <div class="campaign__title section-title">
             <h2 class="section-title__main">campaign</h2>
             <p class="section-title__sub">キャンペーン</p>
           </div>
@@ -336,7 +336,7 @@
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__head">
-                    <div class="tag tag--campaign">
+                    <div class="campaign-card__tag tag tag--campaign">
                       <p>ライセンス講習</p>
                     </div>
                     <div class="campaign-card__body-head">
@@ -368,7 +368,7 @@
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__head">
-                    <div class="tag tag--campaign">
+                    <div class="campaign-card__tag tag tag--campaign">
                       <p>体験ダイビング</p>
                     </div>
                     <div class="campaign-card__body-head">
@@ -432,7 +432,7 @@
                 </div>
                 <div class="campaign-card__body">
                   <div class="campaign-card__head">
-                    <div class="tag tag--campaign">
+                    <div class="campaign-card__tag tag tag--campaign">
                       <p>ファンダイビング</p>
                     </div>
                     <div class="campaign-card__body-head">
@@ -472,8 +472,8 @@
       <section
         class="about-us top-about-us"
         id="about-us">
-        <div class="about-us-inner inner">
-          <div class="section-title">
+        <div class="about-us__inner inner">
+          <div class="about-us__title section-title">
             <h2 class="section-title__main">about <span>us</span></h2>
             <p class="section-title__sub">私たちについて</p>
           </div>
@@ -531,12 +531,10 @@
         </div>
       </section>
       <!-- information-section -->
-      <section
-        class="information__section section-interval--information"
-        id="information"
-      >
-        <div class="information__section-inner inner">
-          <div class="section-title">
+      <section class="information top-information"
+        id="information">
+        <div class="information__inner inner">
+          <div class="information__title section-title">
             <h2 class="section-title__main">information</h2>
             <p class="section-title__sub">ダイビング情報</p>
           </div>
@@ -568,13 +566,13 @@
       <!-- blog -->
       <section class="blog top-blog" id="blog">
         <div class="blog__inner inner">
-          <div class="section-title">
+          <div class="blog__title section-title">
             <h2 class="section-title__main section-title__main--blog">
               blog
             </h2>
             <p class="section-title__sub section-title__sub--blog">ブログ</p>
           </div><!-- /.section-title -->
-          <div class="blog-cards">
+          <div class="blog__cards blog-cards">
             <a href="#" class="blog-cards__item blog-card">
               <div class="blog-card__inner">
                 <div class="blog-card__img">
@@ -649,11 +647,11 @@
       <!-- voice-section -->
       <section class="voice top-voice" id="voice">
         <div class="voice__inner inner">
-          <div class="section-title">
+          <div class="voice__title section-title">
             <h2 class="section-title__main">voice</h2>
             <p class="section-title__sub">お客様の声</p>
           </div>
-          <div class="voice-cards">
+          <div class="voice__cards voice-cards">
             <a href="#" class="voice-cards__item voice-card">
               <div class="voice-card__inner">
                 <div class="voice-card__head">
@@ -735,7 +733,7 @@
       <!-- price-section -->
       <section class="price top-price" id="price">
         <div class="price__inner inner">
-          <div class="section-title">
+          <div class="price__title section-title">
             <h2 class="section-title__main">price</h2>
             <p class="section-title__sub">料金一覧</p>
           </div>
@@ -840,7 +838,7 @@
                 </div>
               </div>
               <div class="contact__button-area">
-                <div class="section-title section-title--contact">
+                <div class="contact__title section-title section-title--contact">
                   <h2 class="section-title__main section-title__main--contact">
                     contact
                   </h2>

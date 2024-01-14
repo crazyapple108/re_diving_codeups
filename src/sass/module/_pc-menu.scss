@@ -1,17 +1,32 @@
 @use 'global' as *;
 
-.main-menu {
+.pc-menu {
+  display: none;
+  @include mq(md) {
+    display: block;
+    height: inherit;
+  }
+}
+
+.pc-menu__items {
   height: inherit;
 }
 
-.main-menu__item {
+.pc-menu__item-list {
+  @include mq(md) {
+    display: flex;
+    height: inherit;
+  }
+}
+
+.pc-menu__item {
   display: flex;
   height: inherit;
   align-items: center;
   justify-content: center;
 }
 
-.main-menu__link {
+.pc-menu__link {
   font-family: $ja-font-family;
   font-size: rem(10);
   line-height: 1.2;
@@ -25,11 +40,11 @@
   padding: 0 clamp(rem(8),1.3888888vw,rem(40));
 }
 
-.main-menu__item:hover{
+.pc-menu__item:hover{
   color:#FFF;
 }
 
-.main-menu__link::after {
+.pc-menu__link::after {
   content: '';
     /*絶対配置で線の位置を決める*/
     position: absolute;
@@ -45,11 +60,11 @@
     transform-origin: center top;/*上部中央基点*/
 }
 
-.main-menu__link:hover::after{
+.pc-menu__link:hover::after{
   transform: scale(1, 1);
 }
 
-.main-menu__label {
+.pc-menu__label {
   font-family: $en-font-family;
   font-size: rem(18);
   color: #fff;

@@ -73,16 +73,16 @@ object-fit: cover;
 }
 
 .header__pc-menu{
-  display: none;
-  @include mq(md) {
-    display: block;
-    height: inherit;
-  }
+  // display: none;
+  // @include mq(md) {
+  //   display: block;
+  //   height: inherit;
+  // }
 }
 
 .header__main-menu-list {
-  @include mq(md) {
-    display: flex;
-    height: inherit;
-  }
+  // @include mq(md) {
+  //   display: flex;
+  //   height: inherit;
+  // }
 }

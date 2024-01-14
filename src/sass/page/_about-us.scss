@@ -23,11 +23,11 @@
   }
 }
 
-.about-us-inner {
+.about-us__inner {
   position: relative;
 }
 
-.about-us-inner.inner {
+.about-us__inner.inner {
   @include mq(md) {
     max-width: rem(1130);
   }

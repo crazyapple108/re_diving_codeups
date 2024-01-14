@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.information__section {
+.information {
   background-color: #DDF0F1;
   padding-top: rem(83);
   padding-bottom: rem(82);
@@ -10,7 +10,7 @@
     }
 }
 
-.information__section-inner {
+.information__inner {
   max-width: rem(630);
   @include mq(md) {
   }
@@ -20,11 +20,6 @@
   margin-top: rem(30);
   @include mq(md) {
     margin-top: rem(40);
-  }
-}
-
-.information__contents {
-  @include mq(md) {
     display: flex;
     align-items: center;
     gap: rem(48);
@@ -32,9 +27,9 @@
 }
 
 .information__img {
-  aspect-ratio: 345 / 227;
+  // aspect-ratio: 345 / 227;
   @include mq(md) {
-    aspect-ratio: 540 / 356;
+    // aspect-ratio: 540 / 356;
     width: 54%;
   }
 }

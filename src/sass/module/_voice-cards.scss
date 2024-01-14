@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  gap: rem(40);
   @include mq(md) {
     flex-direction: initial;
     margin-top: rem(28);
@@ -47,9 +48,9 @@
   }
 }
 
-.voice-cards .voice-card:not(:first-child) {
-  margin-top: rem(40);
-  @include mq(md) {
-    margin-top: initial;
-  }
-}
+// .voice-cards .voice-card:not(:first-child) {
+//   margin-top: rem(40);
+//   @include mq(md) {
+//     margin-top: initial;
+//   }
+// }
