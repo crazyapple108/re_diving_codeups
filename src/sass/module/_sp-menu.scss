@@ -110,36 +110,18 @@
   padding-bottom: rem(100);
 }
 
-.sp-menu__item {
-  position: relative;
-  padding-left: rem(22);
+.sp-menu__item-main {
+  margin-left: rem(22);
 }
 
-.sp-menu__item:first-child::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/common/hitode.svg);
-  display: block;
-  width: rem(18);
-  height: rem(18);
-  top: rem(0);
-  left: 0;
+.sp-menu__item-sub {
+  margin-left: rem(22);
 }
 
-.sp-menu__item  a {
-  color: #FFF;
-  font-family: $ja-font-family;
-  font-size: rem(16);
-  font-weight: 400;
-  line-height: 1.125;
-  display: block;
-  transition: all 0.6s;
-}
-
-.sp-menu__item  a:hover {
+.sp-menu__item-main a:hover {
   opacity: 0.5;
 }
 
-.sp-menu__item:first-child a{
-  font-weight: 700;
+.sp-menu__item-sub a:hover {
+  opacity: 0.5;
 }

@@ -1,45 +1,39 @@
 @use 'global' as *;
 
-.main-list__items {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(1,rem(168));
-  width: 100%;
-}
-
 .main-list__item {
   padding-left: rem(22);
   position: relative;
 }
 
-.main-list__item:before {
+.main-list {
+  position: relative;
+}
+
+.main-list:before {
   content: "";
   position: absolute;
   background-image: url(../images/common/hitode.svg);
   display: block;
   width: rem(18);
   height: rem(18);
-  top: rem(38);
-  left: 0;
+  top: rem(0);
+  left: rem(-22);
 }
 
-.main-list__item-link {
+.main-list__link {
   color: #FFF;
   font-family: $ja-font-family;
   font-size: rem(16);
   font-weight: 700;
   line-height: 1.125;
   display: block;
+  transition: all 0.6s;
 }
 
-.main-list__item-link br {
+.main-list__link br {
   content: "";
   display: block;
   @include mq(md) {
     display: none;
   }
-}
-
-.main-list__right-area {
-  padding-left: rem(6);;
 }

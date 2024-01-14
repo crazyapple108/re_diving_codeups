@@ -49,25 +49,19 @@
   }
 }
 
-.footer__list{
-  position: relative;
-  padding-left: rem(24);
+// .footer__list {
+//   position: relative;
+//   margin-left: rem(24);
+//   transition: all 0.3s ease 0s;
+// }
+
+.footer__sub-list {
+  margin-left: rem(24);
   transition: all 0.3s ease 0s;
 }
 
-.footer__list a:hover {
+.footer__sub-list a:hover {
   opacity: 0.5;
-}
-
-.footer__list-mark::before{
-  content: "";
-  position: absolute;
-  background-image: url(../images/common/hitode.svg);
-  display: block;
-  width: rem(18);
-  height: rem(18);
-  top: rem(3);
-  left: 0;
 }
 
 .footer__list-items {
@@ -78,6 +72,15 @@
 
 .footer__list-items + .footer__list-items{
   margin-top: rem(40);
+}
+
+.footer__list-item-main {
+  margin-left: rem(22);
+  position: relative;
+}
+
+.footer__list-item-main a:hover{
+  opacity: 0.5;
 }
 
 .footer__copylight {
