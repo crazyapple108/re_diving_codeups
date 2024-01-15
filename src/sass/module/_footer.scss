@@ -3,6 +3,13 @@
 .footer {
   background-color: #408F95;
   position: relative;
+  margin-top: rem(106);
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    margin-top: rem(155);
+    padding: rem(80) 0;
+  }
 }
 
 .footer__inner {
@@ -43,44 +50,10 @@
 }
 
 .footer__lists{
-  margin-top: rem(38);
+  margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(26);
   }
-}
-
-// .footer__list {
-//   position: relative;
-//   margin-left: rem(24);
-//   transition: all 0.3s ease 0s;
-// }
-
-.footer__sub-list {
-  margin-left: rem(24);
-  transition: all 0.3s ease 0s;
-}
-
-.footer__sub-list a:hover {
-  opacity: 0.5;
-}
-
-.footer__list-items {
-  display: flex;
-  flex-direction: column;
-  gap: rem(24);
-}
-
-.footer__list-items + .footer__list-items{
-  margin-top: rem(40);
-}
-
-.footer__list-item-main {
-  margin-left: rem(22);
-  position: relative;
-}
-
-.footer__list-item-main a:hover{
-  opacity: 0.5;
 }
 
 .footer__copylight {

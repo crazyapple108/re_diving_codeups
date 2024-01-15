@@ -18,3 +18,31 @@
     margin-left: rem(-32);
   }
 }
+
+.footer-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+}
+
+.footer-list__items + .footer-list__items{
+  margin-top: rem(40);
+}
+
+.footer-list__item-main {
+  margin-left: rem(23);
+  position: relative;
+}
+
+.footer-list__item-main a:hover{
+  opacity: 0.5;
+}
+
+.footer-list__item-sub {
+  margin-left: rem(24);
+  transition: all 0.3s ease 0s;
+}
+
+.footer-list__item-sub a:hover{
+  opacity: 0.5;
+}
