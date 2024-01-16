@@ -43,9 +43,9 @@
   display: flex;
   flex-basis: 50%;
   gap: rem(16);
-  padding-top: rem(16);
+  margin-top: rem(16);
   @include mq(md) {
-    padding-top: rem(38);
+    margin-top: rem(38);
   }
 }
 
