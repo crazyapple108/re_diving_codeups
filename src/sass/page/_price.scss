@@ -135,3 +135,11 @@
     margin-top: rem(12);
   }
 }
+
+.price__button {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(83);
+  }
+}

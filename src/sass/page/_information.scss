@@ -84,3 +84,11 @@
     letter-spacing: 0.01em;
   }
 }
+
+.information__button {
+  margin-top: rem(42);
+  text-align: center;
+  // @include mq(md) {
+  //   margin-top: rem(40);
+  // }
+}
