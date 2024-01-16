@@ -8,6 +8,10 @@
   }
 }
 
+.logo__link img {
+  height: 100%;
+}
+
 .logo__footer {
   width: rem(120);
   @include mq(md) {
