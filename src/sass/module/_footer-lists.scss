@@ -16,3 +16,22 @@
     gap: rem(60);
   }
 }
+
+.footer-lists__items--1{
+  grid-area: a;
+}
+.footer-lists__items--2{
+  grid-area: b;
+}
+.footer-lists__items--3{
+  grid-area: c;
+  @include mq(md) {
+    margin-left: rem(-16);
+  }
+}
+.footer-lists__items--4{
+  grid-area: d;
+  @include mq(md) {
+    margin-left: rem(-32);
+  }
+}

@@ -67,7 +67,7 @@
   z-index: 10;
 }
 
-.btn__mask::before {
+.btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -81,7 +81,7 @@
   transform-origin: right top;
 }
 
-.btn__mask:hover:before {
+.btn:hover::before {
   transform-origin: left top;
   transform: scale(1,1);
 }

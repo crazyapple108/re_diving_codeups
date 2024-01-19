@@ -25,7 +25,7 @@
   }
 }
 
-.price__img-area {
+.price__content-img {
   position: relative;
   aspect-ratio: 345 / 227;
   @include mq(md) {
@@ -35,13 +35,13 @@
   }
 }
 
-.price__img-area img {
+.price__content-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.price__rate-sheet {
+.price__content-rate-sheet {
   margin-top: rem(38);
   @include mq(md) {
     margin-top: rem(0);
@@ -50,7 +50,7 @@
   }
 }
 
-.price__rate-sheet::after {
+.price__content-rate-sheet::after {
   @include mq(md) {
     content: "";
     position: absolute;
@@ -93,13 +93,13 @@
   }
 }
 
-.price__rate-sheet dl {
+.price__content-rate-sheet dl {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.price__rate-sheet dt{
+.price__content-rate-sheet dt{
   font-size: rem(14);
   color: #0D2936;
   margin-top: rem(11);
@@ -111,14 +111,14 @@
   }
 }
 
-.price__rate-sheet dl dt:first-child{
+.price__content-rate-sheet dl dt:first-child{
   margin-top: rem(14);
   @include mq(md) {
     margin-top: rem(12);
   }
 }
 
-.price__rate-sheet dd{
+.price__content-rate-sheet dd{
   font-size: rem(14);
   color: #0D2936;
   margin-top: rem(12);
@@ -129,7 +129,7 @@
   }
 }
 
-.price__rate-sheet dl dt:first-child + dd{
+.price__content-rate-sheet dl dt:first-child + dd{
   margin-top: rem(14);
   @include mq(md) {
     margin-top: rem(12);
