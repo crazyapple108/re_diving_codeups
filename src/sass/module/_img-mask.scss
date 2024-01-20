@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.img-mask{
+	animation-name:maskAnimeBase;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	position: relative;
+	overflow: hidden;/*　はみ出た色要素を隠す　*/
+	opacity:0;
+}
+_::-webkit-full-page-media,
+_:future,
+:root .img-mask{
+	animation-name:maskAnimeBase;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	position: relative;
+	overflow: hidden;/*　はみ出た色要素を隠す　*/
+	opacity:0;
+	}
+
+@keyframes maskAnimeBase{
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;
+}
+}
