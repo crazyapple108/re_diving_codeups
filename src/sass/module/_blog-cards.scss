@@ -4,12 +4,10 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  // margin-top: rem(24);
   box-sizing: border-box;
   gap: rem(38);
   @include mq(md) {
     grid-template-columns: repeat(3, 1fr);
-    // margin-top: rem(80);
     gap: rem(40);
     position: relative;
   }
