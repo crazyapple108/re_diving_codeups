@@ -3,11 +3,9 @@
 .footer {
   background-color: #408F95;
   position: relative;
-  margin-top: rem(106);
   padding-top: rem(48);
   padding-bottom: rem(56);
   @include mq(md) {
-    margin-top: rem(155);
     padding: rem(80) 0;
   }
 }
@@ -52,7 +50,7 @@
 .footer__lists{
   margin-top: rem(40);
   @include mq(md) {
-    margin-top: rem(26);
+    margin-top: rem(25);
   }
 }
 
