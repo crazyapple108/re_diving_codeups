@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.card__title {
+.card-title {
   position: relative;
   display: -webkit-box;
   font-family: $ja-font-family;
@@ -27,17 +27,17 @@
   }
 }
 
-.card__title--campaign{
-  margin-top: rem(5);
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  border-bottom: unset;
-  padding-bottom: 0;
-  flex-grow: 1;
-}
+// .card__title--campaign{
+//   margin-top: rem(5);
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: 2;
+//   border-bottom: unset;
+//   padding-bottom: 0;
+//   flex-grow: 1;
+// }
 
-.card__title--blog {
-  padding-bottom: rem(8);
-  border-bottom: unset;
-  padding-bottom: 0;
-}
+// .card__title--blog {
+//   padding-bottom: rem(8);
+//   border-bottom: unset;
+//   padding-bottom: 0;
+// }
