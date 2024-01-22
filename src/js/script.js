@@ -59,9 +59,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll >= elemPos - windowHeight){
-        $(this).addClass('mask-lr');// 画面内に入ったらbgLRextendというクラス名を追記
+        $(this).addClass('mask__lr');// 画面内に入ったらbgLRextendというクラス名を追記
       }else{
-        $(this).removeClass('mask-lr');// 画面外に出たらbgLRextendというクラス名を外す
+        $(this).removeClass('mask__lr');// 画面外に出たらbgLRextendというクラス名を外す
       }
     });
     $('.js-mask__inner').each(function(){ //bgappearTriggerというクラス名が

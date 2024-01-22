@@ -35,7 +35,7 @@
   content: "";
   background-image: url(../images/common/contact-fish.svg);
   background-repeat: no-repeat;
-    background-size: contain;
+  background-size: contain;
   max-width: rem(109);
   width: calc(109 / 375 * 100vw);
   top: -4.3%;
@@ -48,7 +48,7 @@
     width: calc(301 / 1440 * 100vw);
     max-width: rem(301);
     max-height: rem(138);
-  }
+    }
   }
 
 .contact__wrapper-inner{

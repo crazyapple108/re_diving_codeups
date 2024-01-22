@@ -42,9 +42,6 @@
   font-weight: normal;
   color: #0D2936;
   line-height: 1.3;
-  // -webkit-box-orient: vertical;
-  // -webkit-line-clamp: 1;
-  // overflow: hidden;
   border-bottom: 1px solid #408F95;
   padding-bottom: rem(4);
   @include mq(md) {
@@ -59,12 +56,7 @@
   line-height: 1.5;
   letter-spacing: 0.01em;
   margin-top: rem(4);
-  // display: -webkit-box;
-  // overflow: hidden;
-  // -webkit-box-orient: vertical;
-  // -webkit-line-clamp: 5;
   min-height: rem(120);
-  // border-top: 1px solid #408F95;
   margin-top: rem(15);
 }
 
