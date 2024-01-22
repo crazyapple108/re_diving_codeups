@@ -1,13 +1,8 @@
 @use 'global' as *;
 
-.footer-list__item {
+.footer-list {
   display: flex;
   flex-direction: column;
-  gap: rem(24);
-}
-
-.footer-list__item + .footer-list__item{
-  margin-top: rem(40);
 }
 
 .footer-list__item-main {
@@ -22,6 +17,7 @@
 .footer-list__item-sub {
   margin-left: rem(24);
   transition: all 0.3s ease 0s;
+  margin-top: rem(24);
 }
 
 .footer-list__item-sub a:hover{

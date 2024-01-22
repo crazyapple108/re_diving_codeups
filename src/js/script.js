@@ -11,7 +11,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".header__inner").toggleClass("active");
   });
 
-  var swiper = new Swiper(".js-mv-swiper", {
+  var swiper = new Swiper("#js-swiper-mv", {
     pagination: {
       el: ".js-works-pagination"
     },
