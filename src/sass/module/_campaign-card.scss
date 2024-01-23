@@ -149,3 +149,35 @@
     font-size: rem(40);
   }
 }
+
+.campaign-card__text {
+  margin-top: rem(24);
+}
+
+.campaign-card__contact-area {
+  text-align: center;
+  margin-top: rem(32);
+}
+
+.campaign-card__limit {
+  color:#408F95;
+  font-family: $ja-font-family;
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: 1.125;
+  letter-spacing: 0.05em;
+}
+
+.campaign-card__contact {
+  color:#408F95;
+  font-family: $ja-font-family;
+  font-size: rem(16);
+  font-weight: normal;
+  margin-top: rem(7);
+}
+
+.campaign-card__contact-area .btn {
+  margin-top: rem(15);
+}
+
+

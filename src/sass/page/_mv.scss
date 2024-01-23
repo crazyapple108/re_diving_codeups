@@ -9,6 +9,13 @@
   width: 100%;
 }
 
+.mv__inner--sub {
+  height:rem(460);
+  @include mq(md) {
+    height: rem(548);
+  }
+}
+
 .mv__header {
   position: absolute;
   color: #fff;
@@ -31,6 +38,12 @@
     line-height: 1.25em;
   }
 }
+
+.mv__title--sub {
+  letter-spacing: 0;
+  text-indent: 0;
+}
+
 
 .mv__subtitle {
   text-align: center;

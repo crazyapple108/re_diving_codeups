@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.tag-list {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  row-gap: rem(14);
+  column-gap: rem(20);
+    @include mq(md) {
+      grid-template-columns: repeat(5,rem(162));
+      column-gap: rem(32);
+    }
+  }
+
+.tag-list__item {
+  max-width: rem(162);
+  width: 100%;
+  padding:rem(5) rem(25) ;
+  border: 1px solid #408f95;
+  text-align: center;
+  
+}
+
+.tag-list__item a {
+  display: inline-block;
+  color: #408f95;;
+  font-family: $ja-font-family;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
