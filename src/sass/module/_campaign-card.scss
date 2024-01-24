@@ -82,6 +82,14 @@
   }
 }
 
+.campaign-card__title--sub {
+  @include mq(md) {
+    font-size: rem(24);
+    font-weight: 500;
+    line-height: 1.45;
+  }
+}
+
 .campaign-card__price-body {
   position: relative;
 }
