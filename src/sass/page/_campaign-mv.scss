@@ -1,0 +1,58 @@
+@use 'global' as *;
+
+.campaign-mv {
+  position: relative;
+}
+
+.campaign-mv__inner {
+  // padding: 0 rem(15);
+  // position: relative;
+}
+
+.inner .campaign-mv__img {
+  margin: 0 calc(50% - 50vw);
+}
+
+.campaign-mv__header {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  @include mq(md) {
+    top: 56%;
+  }
+}
+
+.campaign-mv__title {
+  color: #fff;
+  font-family: "Lato",sans-serif;;
+  font-size: rem(40);
+  font-weight: $normal;
+  line-height: 1.25;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+
+.campaign-mv__img {
+  // 
+  // padding: unset;
+}
+
+.campaign-mv__img {
+  display: block;
+  width: 100%;
+  // max-width: 100vh;
+  height: 69vh;
+  // margin: 0 calc(50% - 50vw);
+  @include mq(md) {
+    height: 71.3vh;
+  }
+  }
+
+.campaign-mv__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

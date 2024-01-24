@@ -9,13 +9,6 @@
   width: 100%;
 }
 
-.mv__inner--sub {
-  height:rem(460);
-  @include mq(md) {
-    height: rem(548);
-  }
-}
-
 .mv__header {
   position: absolute;
   color: #fff;
@@ -39,19 +32,11 @@
   }
 }
 
-.mv__title--sub {
-  letter-spacing: 0;
-  text-indent: 0;
-}
-
-
 .mv__subtitle {
   text-align: center;
   font-family: $en-font-family;
   font-size: rem(20);
-  @include mq(md) {
   }
-}
 
 .mv__swiper .swiper-slide{
   width: 100%;
@@ -64,3 +49,7 @@
   object-fit: cover;
  }
 
+.mv__pagenation {
+  display: block;
+  margin-top: rem(8);
+}
