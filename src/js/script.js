@@ -119,12 +119,14 @@ $(".js-modal-open").each(function () {
       var target = $(this).data("target");
       var modal = document.getElementById(target);
       $(modal).fadeIn();
+      $("#header").hide();
       $("html,body").css("overflow", "hidden");
   });
 });
 
 $(".js-modal-close").on("click", function () {
   $(".js-modal").fadeOut();
+  $("#header").show();
   $("html,body").css("overflow", "initial");
 });
 

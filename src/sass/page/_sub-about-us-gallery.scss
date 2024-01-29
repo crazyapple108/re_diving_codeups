@@ -95,9 +95,9 @@
   height: 100%;
   // max-height: rem(586);
   z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   // opacity: 0;
   // visibility: hidden;
@@ -121,13 +121,17 @@
 
 .gallery__modal-container {
   max-width: rem(920);
+  width: 100%;
   aspect-ratio: 920 / 586;
-  position: relative;
+  position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
   z-index: 1;
   
 }
 
-.gallery__modal img {
+.gallery__modal-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
