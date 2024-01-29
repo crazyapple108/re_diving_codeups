@@ -112,4 +112,24 @@ $(function() {
   });
 });
 
+
+$(".js-modal-open").each(function () {
+  $(this).on("click", function (e) {
+      e.preventDefault();
+      var target = $(this).data("target");
+      var modal = document.getElementById(target);
+      $(modal).fadeIn();
+      $("html,body").css("overflow", "hidden");
+  });
+});
+
+$(".js-modal-close").on("click", function () {
+  $(".js-modal").fadeOut();
+  $("html,body").css("overflow", "initial");
+});
+
+$(".js-modal").on("click", function (e) {
+  e.stopPropagation();
+});
+
 });

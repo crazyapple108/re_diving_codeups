@@ -79,13 +79,24 @@
   }
 }
 
+// .about-us__right-img--sub {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0 auto;
+//    @include mq(md) {
+//     aspect-ratio: 880 / 581;
+//     top: 13.4%;
+//     max-width: rem(880);
+//   }
+// }
+
 .about-us__right-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  @include mq(md) {
-    aspect-ratio: 880 / 581;
-  }
+  // @include mq(md) {
+  //   aspect-ratio: 880 / 581;
+  // }
 }
 
 .about-us__contents{
