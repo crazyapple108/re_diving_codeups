@@ -101,12 +101,12 @@ $(function() {
   
   //フッターの手前でボタンを止める
   $(window).on('load scroll', function(){
-    var height = $(document).height(), //ドキュメントの高さ 
+    var height = $(document).height(), //ドキュメントの高さ
         position = window.innerHeight + $(window).scrollTop(), //ページトップから現在地までの高さ
         footer = $('footer').height(); //フッターの高さ
-    if ( height - position  < footer ){ 
+    if ( height - position  < footer ){
       btn.addClass('absolute');
-    } else { 
+    } else {
       btn.removeClass('absolute');
     }
   });
@@ -132,6 +132,14 @@ $(".js-modal-close").on("click", function () {
 
 $(".js-modal").on("click", function (e) {
   e.stopPropagation();
+});
+
+$('.js-tab-menu').on('click', function () {
+  $('.js-tab-menu').removeClass('is-active');
+  $('.js-tab-content').removeClass('is-active');
+  $(this).addClass('is-active');
+  var number = $(this).data("number");
+  $('#' + number).addClass('is-active');
 });
 
 });
