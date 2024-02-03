@@ -1,0 +1,98 @@
+@use 'global' as *;
+
+ .blog-archive {
+    position: relative;
+ }
+
+ .blog-archive::before {
+  content: "";
+  position: absolute;
+  top: -0.36%;
+  left: calc(50% - min(48vw,172px));
+  background-image: url(../images/common/voice-bg-fish.svg);
+  background-size: cover;
+  display: block;
+  width: 100%;
+  max-width: rem(120);
+  height: 100%;
+  max-height: rem(55);
+  z-index: 5;
+ }
+
+.blog-archive__inner {
+  padding: 0 rem(20);
+  margin: 0 auto;
+}
+.blog-archive__contrainer {
+  @include mq(md) {
+    display: flex;
+    gap: rem(96);
+  }
+}
+.blog-archive__main {
+  @include mq(md) {
+    flex: 1 1 calc(100% - rem(294));
+  }
+}
+.blog-archive__cards {}
+.blog-archive__sidebar {
+  margin-top: rem(89);
+  @include mq(md) {
+    flex: 1 1 rem(294);
+  }
+}
+
+.blog-archive__pagenavi {
+  margin-top: rem(80);
+}
+
+.pagination {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  // gap: rem(12);
+  }
+
+  .pagination li:nth-child(n + 2) {
+    margin-left: rem(12);
+  }
+  
+.pagination li:nth-child(2) {
+  margin-left: rem(40);
+}
+
+.pagination li:last-child {
+  margin-left: rem(40);
+}
+
+  .pagination li a,
+  .pagination li span {
+  display: block;
+  color: #408F95;
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #408F95;
+  }
+  .pagination li span {
+  color: #fff;
+  background-color: #408F95;
+  }
+  .pagination li a:hover {
+  color: #fff;
+  background-color: #408F95;
+  }
+  .pagination li a.prev::before{
+  font-family: 'Font Awesome 5 Free';
+  content: "\f053";
+  font-size: rem(16);
+  // padding-right: 10px;
+  font-weight: 500;
+  text-align: center;
+  }
+  .pagination li a.next::after{
+  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  font-size: rem(16);
+  // padding-left: 10px;
+  font-weight: 500;
+  }

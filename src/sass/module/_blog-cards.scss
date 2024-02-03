@@ -11,3 +11,9 @@
     gap: rem(40);
   }
 }
+
+.blog-cards--sub {
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
