@@ -12,6 +12,10 @@
   }
 }
 
+.campaign-card--blog-archive {
+  width: 100%;
+}
+
 .campaign-card:hover img {
   transform: scale(1.1);
 }
@@ -22,6 +26,10 @@
   @include mq(md) {
     aspect-ratio: 333 / 223;
   }
+}
+
+.campaign-card__img--blog-archive {
+  aspect-ratio: 294/188;
 }
 
 .campaign-card__img img{
@@ -45,6 +53,12 @@
   }
 }
 
+.campaign-card__body--blog-archive{
+  padding-left: rem(23);
+  padding-right: rem(23);
+}
+
+
 .campaign-card__head{
   flex-grow: 1;
 }
@@ -57,6 +71,8 @@
     padding: rem(5) rem(14);
   }
 }
+
+
 .campaign-card__tag p {
   font-family: $ja-font-family;
   font-size: rem(12);
@@ -81,6 +97,13 @@
     margin-top: rem(7);
   }
 }
+
+.campaign-card__title--blog-archive {
+  display: block;
+  text-align: center;
+  margin-top: rem(3);
+}
+
 
 .campaign-card__title--sub {
   @include mq(md) {

@@ -3,12 +3,12 @@
 .sidebar {}
 
 .sidebar__inner {
-  padding: 0 rem(25);
+  padding: 0 rem(20);
 }
 .sidebar__block {}
 
 .sidebar__block + .sidebar__block {
-  margin-top: rem(80);
+  margin-top: rem(81);
 }
 
 .sidebar__block-head {
@@ -17,10 +17,12 @@
   font-size: rem(24);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
   position: relative;
-  padding-left: rem(74);
+  padding-left: rem(73);
   border-left: 8px solid #408F95;
+  padding-top: rem(16);
+  padding-bottom: rem(10);
 }
 
 .sidebar__block-head::before {
@@ -31,12 +33,12 @@
     color: #0d2936;
     content: "";
     display: inline-block;
-    height: rem(34);
-    left: 8%;
+    height: rem(40);
+    left: rem(21);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: rem(39);
+    width: rem(40);
 }
 
 .sidebar__block-lists {
@@ -73,7 +75,7 @@
   font-size: rem(12);
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
 }
 
 .sidebar__block-list-head {
@@ -82,6 +84,14 @@
   font-size: rem(16);
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.05em;
-  margin-top: rem(4);
+  letter-spacing: 0em;
+  margin-top: rem(6);
+}
+
+.sidebar__block-accordion {
+  padding-left: rem(30);
+}
+
+.sidebar__block-accordion .accordion + .accordion {
+  margin-top: rem(15);
 }

@@ -1,0 +1,68 @@
+@use 'global' as *;
+
+.accordion{
+  
+}
+
+.accordion__title{
+    cursor: pointer;
+    display: flex;/* list-item以外にする */
+    position: relative;
+    align-items: center;
+    color:#408F95;
+    font-family: $ja-font-family;
+    font-size: rem(24);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0em;
+    // padding: rem(4);
+}
+
+.accordion__title::before{
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/acordionmark.svg);
+  background-repeat: no-repeat;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  left: rem(-26);
+  width: rem(24);
+  height: rem(24);
+  transition: all 0.2s;
+}
+
+.accordion__title::-webkit-details-marker{
+    // display: none;
+}
+// .accordion__title::after{
+//     content: "＞";
+//     margin-left: auto;
+//     transform: rotate(90deg);
+// }
+[open] > .accordion__title::before{
+    transform:translateY(-30%) rotate(0deg);
+    left: rem(-28);
+}
+
+.accordion__title__icon,
+.accordion__content__icon{
+    width: 2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.accordion__content{
+    display: flex;
+    // padding: 1rem;
+    padding-left: rem(26);
+    margin-top: rem(15);
+}
+
+.accordion__content .accordion + .accordion {
+  margin-top: rem(15);
+}
+
+
+.accordion__content-inner{
+    flex-grow: 1;
+}
