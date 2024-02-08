@@ -12,15 +12,19 @@
   padding: rem(15) rem(16) rem(24);
 }
 .blog-card__img{
-  // width: 100%;
+  overflow: hidden;
+  width: 100%;
   aspect-ratio: 301 / 201;
-  max-width: rem(301);
+  // max-width: rem(301);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blog-card__img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.3s ease;
 }
 
 .blog-card__body{
@@ -76,7 +80,7 @@
   }
 }
 
-.blog-card:hover {
-  transform: translateY(rem(-20));
+.blog-card:hover img {
+  transform: scale(1.1);
 }
 

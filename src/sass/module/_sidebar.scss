@@ -4,6 +4,9 @@
 
 .sidebar__inner {
   padding: 0 rem(20);
+  @include mq(md) {
+    padding: unset;
+  }
 }
 .sidebar__block {}
 
@@ -86,6 +89,7 @@
   line-height: 1;
   letter-spacing: 0em;
   margin-top: rem(6);
+  white-space: nowrap;
 }
 
 .sidebar__block-accordion {

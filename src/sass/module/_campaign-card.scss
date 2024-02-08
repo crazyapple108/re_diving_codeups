@@ -30,6 +30,15 @@
 
 .campaign-card__img--blog-archive {
   aspect-ratio: 294/188;
+  @include mq(md) {
+    aspect-ratio: 294/188;
+  }
+}
+
+.campaign-card__img--blog-archive + .campaign-card__img--blog-archive {
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 
 .campaign-card__img img{
@@ -56,6 +65,10 @@
 .campaign-card__body--blog-archive{
   padding-left: rem(23);
   padding-right: rem(23);
+  @include mq(md) {
+    padding-top: rem(18);
+    padding-bottom: rem(24);
+  }
 }
 
 
@@ -102,6 +115,11 @@
   display: block;
   text-align: center;
   margin-top: rem(3);
+  @include mq(md) {
+    font-size: rem(16);
+    margin-top: unset;
+    padding-bottom: rem(9);
+  }
 }
 
 
@@ -144,6 +162,14 @@
   }
 }
 
+.campaign-card__price-title--blog {
+  @include mq(md) {
+    font-size: rem(14);
+    letter-spacing: 0;
+    margin-top: rem(12);
+  }
+}
+
 .campaign-card__price{
   display: flex;
   gap: rem(16);
@@ -153,6 +179,13 @@
   @include mq(md) {
     gap: rem(27);
     margin-top: rem(4);
+  }
+}
+
+.campaign-card__price--blog {
+  @include mq(md) {
+    gap: rem(20);
+    margin-top: rem(5);
   }
 }
 
@@ -169,6 +202,16 @@
   }
 }
 
+.campaign-card__price-before-blog{
+  color: var(--green, #0D2936);
+  font-family: "Lato",sans-serif;
+  font-size: rem(20);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: line-through rem(4) solid #C94800;
+}
+
 .campaign-card__price-after{
   color: #408F95;
   font-family: "Lato", sans-serif;
@@ -179,6 +222,15 @@
   @include mq(md) {
     font-size: rem(40);
   }
+}
+
+.campaign-card__price-after-blog {
+  color: #408F95;
+  font-family: "Lato", sans-serif;
+  font-size: rem(32);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .campaign-card__text {
