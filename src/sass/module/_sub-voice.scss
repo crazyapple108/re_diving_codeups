@@ -8,7 +8,7 @@
   position: absolute;
   content: "";
   top: -0.8%;
-  left: calc(50% - min(46vw,620px));
+  left: calc(50% - min(46vw,265px));
   background-image: url(../images/common/voice-bg-fish.svg);
   background-size: cover;
   display: block;
@@ -18,9 +18,20 @@
   max-height: rem(55);
   z-index: -1;
   @include mq(md) {
-    top: -3.6%;
+    top: -4.4%;
     max-width: rem(301);
     max-height: rem(138);
+    left: calc(50% - min(46vw,620px));
+
+  }
+}
+
+.sub-voice__tag-list {
+  max-width: rem(530);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin: unset;
   }
 }
 
@@ -32,9 +43,15 @@
   }
 }
 .sub-voice__cards {
-  margin-top: rem(38);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(42);
+  }
 }
 
 .sub-voice__pagenavi {
-  margin-top: rem(81);
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(73);
+  }
 }
