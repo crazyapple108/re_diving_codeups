@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.p-form-textarea textarea {
+.form-textarea textarea {
   padding: rem(8) rem(15);
   width: 100%;
   height: rem(150);
@@ -12,7 +12,7 @@
   background-image: none;
 }
 
-.p-form-textarea textarea:focus {
+.form-textarea textarea:focus {
   border: 1px solid #ccc;
   box-shadow: none;
   outline: none;

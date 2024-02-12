@@ -1,5 +1,5 @@
 @use 'global' as *;
-.p-form-select select {
+.form-select select {
   padding: rem(11.5) rem(50) rem(11.5) rem(15);
   width: 100%;
   font-size: rem(15);
@@ -14,11 +14,11 @@
   cursor: pointer;
 }
 
-.p-form-select select::-ms-expand {
+.form-select select::-ms-expand {
   display: none;
 }
 
-.p-form-select select:focus {
+.form-select select:focus {
   border: 1px solid #ccc;
   box-shadow: none;
   outline: none;

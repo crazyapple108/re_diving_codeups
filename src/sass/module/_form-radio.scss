@@ -1,13 +1,13 @@
 @use 'global' as *;
 
-.p-form-radio label {
+.form-radio label {
   display: block;
   @include mq(md){
       display: inline-block;
   }
 }
 
-.p-form-radio label:not(:first-of-type) {
+.form-radio label:not(:first-of-type) {
   margin-top: rem(10);
   @include mq(md){
       margin-top: 0;
@@ -15,11 +15,11 @@
   }
 }
 
-.p-form-radio input {
+.form-radio input {
   display: none;
 }
 
-.p-form-radio input + span {
+.form-radio input + span {
   padding: 0 0 0 rem(25);
   position: relative;
   display: block;
@@ -31,7 +31,7 @@
   }
 }
 
-.p-form-radio input + span::before {
+.form-radio input + span::before {
   content: "";
   width: rem(15);
   height: rem(15);
@@ -45,7 +45,7 @@
   border-radius: 50%;
 }
 
-.p-form-radio input + span::after {
+.form-radio input + span::after {
   content: "";
   padding: rem(2);
   width: rem(7);
@@ -61,6 +61,6 @@
   transition: .3s;
 }
 
-.p-form-radio input:checked + span::after {
+.form-radio input:checked + span::after {
   opacity: 1;
 }
