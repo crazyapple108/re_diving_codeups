@@ -4,10 +4,10 @@
   position: relative;
 }
 
-.contact-form ::before {
+.contact-form::before {
   position: absolute;
   content: "";
-  top: rem(-23);
+  top: rem(-27);
   left: calc(50% - min(46vw,265px));
   background-image: url(../images/common/voice-bg-fish.svg);
   background-size: cover;
@@ -26,5 +26,82 @@
 }
 
 .contact-form__inner {
-  
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem(15);
+  padding-right: rem(15);
+  @include mq(md) {
+    max-width: rem(750);
+    padding-left: rem(25);
+    padding-right: rem(25);
+  }
 }
+
+// .contact-form__checkbox {
+//   position: relative;
+// }
+
+// .contact-form__checkbox-input {
+//   width: rem(1);
+//   height: rem(1);
+//   position: absolute;
+//   clip: rect(0, 0, 0, 0);
+//   overflow: hidden;
+
+// }
+
+.contact-form__footer {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(70);
+  }
+}
+
+.contact-form__checkbox-text {
+  position: relative;
+}
+
+.contact-form__checkbox-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #408f95;
+  display: block;
+  width: rem(15);
+  height: rem(15);
+  @include mq(md) {
+    left: rem(-2);
+    width: rem(22);
+    height: rem(22);
+  }
+}
+
+.contact-form__checkbox-text::after {
+  content: "";
+  margin-top: rem(-2);
+  position: absolute;
+  top: 50%;
+  left: rem(3);
+  transform: translateY(-50%) rotate(-45deg);
+  display: block;
+  width: rem(9);
+  height: rem(5);
+  border-bottom: rem(2) solid #C94800;
+  border-left: rem(2) solid #C94800;
+  transition:  .3s;
+  opacity: 0;
+}
+
+
+.contact-form__submit {
+  margin-top: rem(24);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+

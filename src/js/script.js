@@ -174,4 +174,23 @@ $('.js-faq-question').on('click', function () {
   $(this).toggleClass('is-open');
 });
 
+$("#check").change(function () {
+  // チェックが入っていたら有効化
+  if ($(this).is(":checked")) {
+    // ボタンを有効化
+    $("#button").prop("disabled", false);
+    // 有効化したらボタンの色を変える
+    $("#button").css({
+      "background-color": "#fb8a00",
+    });
+  } else {
+    // ボタンを無効化
+    $("#button").prop("disabled", true);
+    // 無効化したらボタンの色を戻す
+    $("#button").css({
+      "background-color": "#c1c1c1",
+    });
+  }
+});
+
 });

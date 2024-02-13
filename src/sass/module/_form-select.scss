@@ -1,17 +1,26 @@
 @use 'global' as *;
+
+.form-select {
+  flex-grow: 1;
+}
+
 .form-select select {
-  padding: rem(11.5) rem(50) rem(11.5) rem(15);
+  padding:  rem(13) rem(50) rem(12) rem(7);
   width: 100%;
-  font-size: rem(15);
+  font-size: rem(12);
+  font-family: $ja-font-family;
   line-height: 1;
   border-radius: 0;
-  border: 1px solid #ccc;
-  background-image: url(./../images/common/arrow.svg);
+  border: 1px solid #408f95;
+  background-image: url(../images/common/contact-mark.svg);
   background-repeat: no-repeat;
-  background-size: rem(15);
-  background-position: right rem(15) top rem(15);
+  background-size: rem(12);
+  background-position: right rem(7) top rem(11);
   appearance: none;
   cursor: pointer;
+  @include mq(md) {
+    padding: rem(9) rem(50) rem(9) rem(7);
+  }
 }
 
 .form-select select::-ms-expand {

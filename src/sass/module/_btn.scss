@@ -18,6 +18,11 @@
   display: inline-block;
 }
 
+.btn--send {
+  padding-left: rem(56);
+  padding-right: rem(112);
+}
+
 .btn::after {
   content: '';
 	position: absolute;
@@ -83,4 +88,11 @@
 .btn:hover::before {
   transform-origin: left top;
   transform: scale(1,1);
+}
+
+#button {
+  margin-top: rem(40);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

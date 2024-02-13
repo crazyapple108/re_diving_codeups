@@ -8,10 +8,10 @@
 }
 
 .form-checkbox label:not(:first-of-type) {
-  margin-top: rem(10);
+  margin-top: rem(3);
   @include mq(md){
-      margin-top: 0;
-      margin-left: rem(20);
+      margin-top: rem(3);
+      // margin-left: rem(20);
   }
 }
 
@@ -22,10 +22,20 @@
 .form-checkbox input + span {
   cursor: pointer;
   display: inline-block;
-  padding: 0 0 0 rem(25);
+  padding: 0 0 0 rem(23);
+  letter-spacing: 0.06em;
   position: relative;
-  font-size: rem(15);
-  line-height: 1;
+  // font-size: rem(15);
+  // line-height: 1.5;
+  color:#000;
+  font-family: $ja-font-family;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1.57;
+  @include mq(md) {
+    padding: 0 0 0 rem(35);
+    letter-spacing: 0;
+  }
 }
 
 .form-checkbox input + span::before {
@@ -35,24 +45,33 @@
   left: 0;
   transform: translateY(-50%);
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #408f95;
   display: block;
   width: rem(15);
   height: rem(15);
 }
+
+.form-checkbox input + span:last-child::before {
+  @include mq(md) {
+    left: rem(-2);
+    width: rem(22);
+    height: rem(22);
+  }
+}
+
 
 .form-checkbox input + span::after {
   content: "";
   margin-top: rem(-2);
   position: absolute;
   top: 50%;
-  left: 0;
+  left: rem(3);
   transform: translateY(-50%) rotate(-45deg);
   display: block;
-  width: rem(15);
-  height: rem(8);
-  border-bottom: rem(3) solid #000;
-  border-left: rem(3) solid #000;
+  width: rem(9);
+  height: rem(5);
+  border-bottom: rem(2) solid #C94800;
+  border-left: rem(2) solid #C94800;
   transition:  .3s;
   opacity: 0;
 }
