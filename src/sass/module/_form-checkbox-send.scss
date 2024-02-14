@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.form-checkbox-send {
+
+}
+
+.form-checkbox-send input + span::before {
+  content: "";
+  position: absolute;
+  top: -2%;
+  left: rem(-31);
+  background: #fff;
+  border: 1px solid #408f95;
+  display: block;
+  width: rem(22);
+  height: rem(22);
+  @include mq(md) {
+    left: rem(-37);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.form-checkbox-send input + span::after {
+  content: "";
+  margin-top: rem(-2);
+  position: absolute;
+  top: 22%;
+  left: rem(-26);
+  transform: translateY(-50%) rotate(-45deg);
+  display: block;
+  width: rem(12);
+  height: rem(7);
+  border-bottom: rem(2) solid #C94800;
+  border-left: rem(2) solid #C94800;
+  transition:  .3s;
+  opacity: 0;
+  @include mq(md) {
+    top: 50%;
+    left: rem(-32);
+    transform: translateY(-50%) rotate(-45deg);
+  
+  }
+}
+
+.form-checkbox-send input:checked + span::after {
+  opacity: 1;
+}

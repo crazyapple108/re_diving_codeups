@@ -33,8 +33,8 @@
   font-weight: 400;
   line-height: 1.57;
   @include mq(md) {
-    padding: 0 0 0 rem(35);
-    letter-spacing: 0;
+    padding: 0 0 0 rem(22);
+    letter-spacing: 0.15em;
   }
 }
 
@@ -53,9 +53,9 @@
 
 .form-checkbox input + span:last-child::before {
   @include mq(md) {
-    left: rem(-2);
-    width: rem(22);
-    height: rem(22);
+    // left: rem(-2);
+    // width: rem(22);
+    // height: rem(22);
   }
 }
 

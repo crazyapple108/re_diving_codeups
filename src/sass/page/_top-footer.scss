@@ -6,3 +6,10 @@
     margin-top: rem(159);
   }
 }
+
+.top-footer--sub-contact {
+  margin-top: rem(147);
+  @include mq(md) {
+    margin-top: rem(168);
+  }
+}
