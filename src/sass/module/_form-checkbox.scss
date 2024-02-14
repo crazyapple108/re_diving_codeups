@@ -11,7 +11,6 @@
   margin-top: rem(3);
   @include mq(md){
       margin-top: rem(3);
-      // margin-left: rem(20);
   }
 }
 
@@ -25,8 +24,6 @@
   padding: 0 0 0 rem(23);
   letter-spacing: 0.06em;
   position: relative;
-  // font-size: rem(15);
-  // line-height: 1.5;
   color:#000;
   font-family: $ja-font-family;
   font-size: rem(14);
@@ -49,14 +46,6 @@
   display: block;
   width: rem(15);
   height: rem(15);
-}
-
-.form-checkbox input + span:last-child::before {
-  @include mq(md) {
-    // left: rem(-2);
-    // width: rem(22);
-    // height: rem(22);
-  }
 }
 
 

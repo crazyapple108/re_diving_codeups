@@ -41,11 +41,6 @@
   }
 }
 
-.form__wrap.form__wrap--textarea .form__label {
-  @include mq(md){
-      // margin-top: rem(10);
-  }
-}
 
 .form__label span {
   margin-left: rem(9);

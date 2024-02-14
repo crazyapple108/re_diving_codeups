@@ -38,18 +38,6 @@
   }
 }
 
-// .contact-form__checkbox {
-//   position: relative;
-// }
-
-// .contact-form__checkbox-input {
-//   width: rem(1);
-//   height: rem(1);
-//   position: absolute;
-//   clip: rect(0, 0, 0, 0);
-//   overflow: hidden;
-// }
-
 .contact-form__footer {
   margin-top: rem(35);
   text-align: center;
@@ -67,24 +55,6 @@
   line-height: 1.5;
   letter-spacing: 0;
 }
-
-// .contact-form__checkbox-text::before {
-//   content: "";
-//   position: absolute;
-//   top: 50%;
-//   left: 0;
-//   transform: translateY(-50%);
-//   background: #fff;
-//   border: 1px solid #408f95;
-//   display: block;
-//   width: rem(15);
-//   height: rem(15);
-//   @include mq(md) {
-//     left: rem(-2);
-//     width: rem(22);
-//     height: rem(22);
-//   }
-// }
 
 .contact-form__checkbox-text::after {
   content: "";
