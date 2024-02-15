@@ -13,3 +13,10 @@
     margin-top: rem(168);
   }
 }
+
+.top-footer--thanks {
+  margin-top: rem(145);
+  @include mq(md) {
+    margin-top: rem(121);
+  }
+}
