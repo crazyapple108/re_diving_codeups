@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.sitemap-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sitemap-list__item-main {
+  margin-left: rem(23);
+  position: relative;
+}
+
+.sitemap-list__item-main a:hover{
+  opacity: 0.5;
+}
+
+.sitemap-list__item-sub {
+  margin-left: rem(24);
+  transition: all 0.3s ease 0s;
+  margin-top: rem(24);
+}
+
+.sitemap-list__item-sub a:hover{
+  opacity: 0.5;
+}

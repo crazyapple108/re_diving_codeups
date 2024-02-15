@@ -20,6 +20,11 @@
   left: rem(-22);
 }
 
+.main-list--black:before {
+  background-image: url(../images/common/kurohitode.svg);
+
+}
+
 .main-list__link {
   color: #FFF;
   font-family: $ja-font-family;
@@ -29,6 +34,11 @@
   display: block;
   transition: all 0.6s;
 }
+
+.main-list__link--black {
+  color: #0d2936;
+}
+
 
 .main-list__link br {
   content: "";
