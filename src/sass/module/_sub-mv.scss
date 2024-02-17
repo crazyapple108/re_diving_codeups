@@ -21,6 +21,7 @@
   font-size: rem(40);
   font-weight: $normal;
   line-height: 1.25;
+  white-space: nowrap;
   @include mq(md) {
     font-size: rem(80);
   }
