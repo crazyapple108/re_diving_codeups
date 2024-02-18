@@ -3,4 +3,8 @@
 .top-404-mv {
   padding-top: rem(88);
   padding-bottom: rem(45);
+  @include mq(md) {
+    padding-top: rem(98);
+    padding-bottom: rem(150);
+  }
 }
