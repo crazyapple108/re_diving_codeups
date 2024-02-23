@@ -18,9 +18,9 @@
   display: inline-block;
 }
 
-.btn--send {
-  padding-left: rem(56);
-  padding-right: rem(112);
+.btn--submit {
+  padding: rem(19) rem(16) rem(16) rem(42);
+  
 }
 
 .btn--404{
@@ -70,6 +70,11 @@
   transform: translateY(-50%) skew(45deg);
   z-index: 10;
   transition:all .5s ease;
+}
+
+.btn--submit p::before {
+  right: rem(35);
+  top: 34%;
 }
 
 .btn--404 p::before {

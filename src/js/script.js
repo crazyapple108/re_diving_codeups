@@ -1,5 +1,4 @@
-
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+  jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
   $(".sp-menu__hamburger").click(function () {
     // ハンバーガーボタンclass付け外し
@@ -193,4 +192,154 @@ $("#check").change(function () {
   }
 });
 
+/* ========================================
+  // フォームバリデーション
+  ======================================== */
+  function formValidation() {
+    /* バリデーション関数
+    ------------------------------ */
+    function validateField(field, regex, errorMessage) {
+      if (!regex.test($(field).val())) {
+        $(field).addClass("is-error");
+        $(field).next(".error-message").remove();
+        $(field).after('<p class="error-message">' + errorMessage + "</p>");
+        return false;
+      } else {
+        $(field).removeClass("is-error");
+        $(field).next(".error-message").remove();
+        return true;
+      }
+    }
+
+    /* お問い合わせ項目のバリデーション関数
+    ------------------------------ */
+    function validateCheckboxGroup(groupName, errorMessage) {
+      if ($('input[name="' + groupName + '"]:checked').length === 0) {
+        let errorContainer = $("#checkboxError");
+        if (errorContainer.length === 0) {
+          $(".form__check").append(
+            '<p id="checkboxError" class="error-message">' +
+              errorMessage +
+              "</p>"
+          );
+        }
+        return false;
+      } else {
+        $("#checkboxError").remove();
+        return true;
+      }
+    }
+
+    /* 個人情報同意バリデーション関数
+    ------------------------------ */
+    function validateConsentCheckbox(errorMessage) {
+      if (!$("#consent").is(":checked")) {
+        let errorContainer = $("#consentError");
+        if (errorContainer.length === 0) {
+          $("#consent").addClass("is-error");
+          $(".form__privacy").append(
+            '<p id="consentError" class="error-message"><span>個人情報取り扱いに</span><span>同意する必要があります。</span></p>'
+          );
+        }
+        return false;
+      } else {
+        $("#consent").removeClass("is-error");
+        $("#consentError").remove();
+        return true;
+      }
+    }
+
+    /* リアルタイムバリデーション
+    ------------------------------ */
+    $("#name, #email, #phone, #message, #consent").on(
+      "input change",
+      function () {
+        switch (this.id) {
+          case "name":
+            validateField(
+              this,
+              /^[ぁ-んァ-ヶー一-龯]+$/,
+              "有効な名前を入力してください。"
+            );
+            break;
+          case "email":
+            validateField(
+              this,
+              /^[^@]+@[^@]+\.[^@]+$/,
+              "有効なメールアドレスを入力してください。"
+            );
+            break;
+          case "phone":
+            validateField(
+              this,
+              /^(\d{2,4}-\d{2,4}-\d{4}|\d{10,11})$/,
+              "有効な電話番号を入力してください。"
+            );
+            break;
+          case "message":
+            validateField(this, /.+/, "メッセージを入力してください。");
+            break;
+          case "consent":
+            validateConsentCheckbox();
+            break;
+        }
+      }
+    );
+
+    /* チェックボックスのリアルタイムバリデーション
+  ------------------------------ */
+    $('input[name="category"]').on("change", function () {
+      validateCheckboxGroup(
+        "category",
+        "お問い合わせ項目を選択してください。"
+      );
+    });
+
+    /* 送信時のバリデーション
+    ------------------------------ */
+    $("#contact-form").submit(function (e) {
+      let isValid = true;
+      isValid &= validateField(
+        "#name",
+        /^[ぁ-んァ-ヶー一-龯]+$/,
+        "有効な名前を入力してください。"
+      );
+      isValid &= validateField(
+        "#email",
+        /^[^@]+@[^@]+\.[^@]+$/,
+        "有効なメールアドレスを入力してください。"
+      );
+      isValid &= validateField(
+        "#phone",
+        /^(\d{2,4}-\d{2,4}-\d{4}|\d{10,11})/,
+        "有効な電話番号を入力してください。"
+      );
+      isValid &= validateCheckboxGroup(
+        "category",
+        "お問い合わせ項目を選択してください。"
+      );
+      isValid &= validateField(
+        "#message",
+        /.+/,
+        "メッセージを入力してください。"
+      );
+      isValid &= validateConsentCheckbox();
+
+      if (!isValid) {
+        e.preventDefault();
+        let errorContainer = $("#formError");
+        if (errorContainer.length === 0) {
+          $("#contact-form").prepend(
+            '<p id="formError" class="error-message"><span class="error-message-text">※必須項目が入力されていません。<span class="error-message-text">入力してください。</p>'
+          );
+        }
+      } else {
+        $("#formError").remove();
+      }
+    });
+  }
+
+  formValidation();
 });
+
+
