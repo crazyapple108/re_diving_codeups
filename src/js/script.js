@@ -146,6 +146,13 @@ let accordionSummary = '.js-accordion__title';
 let accordionContent = '.js-accordion__content';
 let speed = 200;
 
+$(document).ready(function() {
+  //  初期状態で開くアコーディオンのタイトル要素を特定
+  var firstAccordionTitle = $('.js-faq-question').first();
+  //  タイトル要素に対してクリックイベントをトリガーして開閉処理を実行
+  firstAccordionTitle.trigger('click');
+});
+
 $(accordionSummary).each(function (){
     $(this).on("click",function (event){
         // デフォルトの挙動を無効化
