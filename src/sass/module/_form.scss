@@ -246,28 +246,30 @@
 }
 
 // バリデーション
-.error-message {
-  text-align: center;
-  color: #c94800;
-  font-size: rem(16);
-  display: block;
-}
+.form {
+  .error-message {
+    text-align: center;
+    color: #c94800;
+    font-size: rem(16);
+    display: block;
+  }
 
-.error-message#formError {
-  margin-bottom: rem(40);
-}
+  .error-message#formError {
+    margin-bottom: rem(40);
+  }
 
-.error-message span {
-  display: inline-block;
-}
+  .error-message span {
+    display: inline-block;
+  }
 
-.form__input input.is-error,
-.form__textarea textarea.is-error {
-  border: 1px solid #c94800;
-  background: rgba(201, 72, 0, 0.2);
-}
+  .form__input input.is-error,
+  .form__textarea textarea.is-error {
+    border: 1px solid #c94800;
+    background: rgba(201, 72, 0, 0.2);
+  }
 
-#consent.is-error + span::before {
-  border: 1px solid #c94800;
-  background: rgba(201, 72, 0, 0.2);
+  #consent.is-error + span::before {
+    border: 1px solid #c94800;
+    background: rgba(201, 72, 0, 0.2);
+  }
 }
