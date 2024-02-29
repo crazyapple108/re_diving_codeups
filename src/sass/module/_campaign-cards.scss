@@ -27,9 +27,11 @@
 
 .campaign-cards__wrapper {
   margin-top: rem(40);
-  // @include mq(md) {
-  //   margin-top: rem(40);
-  // }
+  padding-left: rem(32.5);
+  padding-right: rem(32.5);
+  @include mq(md) {
+    padding: unset;
+  }
 }
 
 .campaign-cards__pagenavi {

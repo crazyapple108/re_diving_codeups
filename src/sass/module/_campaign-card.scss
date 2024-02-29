@@ -12,6 +12,11 @@
   }
 }
 
+.campaign-card--sub {
+  width: 100%;
+  max-width: rem(530);
+}
+
 .campaign-card--blog-archive {
   width: 100%;
 }
@@ -168,6 +173,13 @@
     margin-top: rem(17);
   }
 }
+
+.campaign-card__price-title--sub {
+  @include mq(md) {
+    margin-top: rem(25);
+  }
+}
+
 
 .campaign-card__price-title--blog {
   @include mq(md) {
