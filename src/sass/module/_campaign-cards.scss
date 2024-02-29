@@ -27,9 +27,9 @@
 
 .campaign-cards__wrapper {
   margin-top: rem(40);
-  @include mq(md) {
-    margin-top: rem(36);
-  }
+  // @include mq(md) {
+  //   margin-top: rem(40);
+  // }
 }
 
 .campaign-cards__pagenavi {

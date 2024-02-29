@@ -62,6 +62,12 @@
   }
 }
 
+.campaign-card__body--sub {
+  @include mq(md) {
+    padding: rem(23) rem(24) rem(40);
+  }
+}
+
 .campaign-card__body--blog-archive{
   padding-left: rem(23);
   padding-right: rem(23);
@@ -128,6 +134,7 @@
     font-size: rem(24);
     font-weight: 500;
     line-height: 1.45;
+    padding-bottom: rem(2);
   }
 }
 
@@ -179,6 +186,12 @@
   @include mq(md) {
     gap: rem(27);
     margin-top: rem(4);
+  }
+}
+
+.campaign-card__price--sub {
+  @include mq(md) {
+    gap: rem(40);
   }
 }
 

@@ -24,7 +24,7 @@
   max-width: rem(530);
 }
 
-.gallery__wrapper {
+.sub-about-us-gallery__wrapper {
   margin-top: rem(40);
   display: grid;
   grid-template-columns: 1fr;
@@ -38,78 +38,64 @@
   }
 }
 
-.gallery__wrapper img {
+.sub-about-us-gallery__wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.gallery__item:nth-child(6n + 1) {
+.sub-about-us-gallery__item:nth-child(6n + 1) {
   @include mq(md) {
     grid-column: 1;
     grid-row: span 2;
   }
 }
-.gallery__item img:nth-child(6n + 1) {
+.sub-about-us-gallery__item img:nth-child(6n + 1) {
   @include mq(md) {
     aspect-ratio: 746/492;
   }
 }
 
-.gallery__item:nth-child(6n + 2),.gallery__item:nth-child(6n + 3) {
+.sub-about-us-gallery__item:nth-child(6n + 2),.sub-about-us-gallery__item:nth-child(6n + 3) {
   @include mq(md) {
     grid-column: span 2;
   }
 }
-.gallery__item img:nth-child(6n + 2),.gallery__item img:nth-child(6n + 3) {
+.sub-about-us-gallery__item img:nth-child(6n + 2),.sub-about-us-gallery__item img:nth-child(6n + 3) {
   @include mq(md) {
    aspect-ratio: 580 / 369;
   }
 }
 
-.gallery__item:nth-child(6n + 4),.gallery__item:nth-child(6n + 5) {
+.sub-about-us-gallery__item:nth-child(6n + 4),.sub-about-us-gallery__item:nth-child(6n + 5) {
   @include mq(md) {
     grid-column: span 2;
   }
 }
 
-.gallery__item img:nth-child(6n + 4),.gallery__item img:nth-child(6n + 5) {
+.sub-about-us-gallery__item img:nth-child(6n + 4),.sub-about-us-gallery__item img:nth-child(6n + 5) {
   @include mq(md) {
    aspect-ratio: 580 / 369;
   }
 }
 
-.gallery__item:nth-child(6n+6) {
+.sub-about-us-gallery__item:nth-child(6n+6) {
   @include mq(md) {
     grid-row:span 2;
   }
 }
 
-.gallery__modal {
+.sub-about-us-gallery__modal {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  // max-width: rem(920);
   height: 100%;
-  // max-height: rem(586);
   z-index: 100;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
-  // opacity: 0;
-  // visibility: hidden;
-  // transition: opacity 0.2s,visibility 0.2s ;
 }
 
-.gallery__modal.is-active {
-  // opacity: 1;
-  // visibility: visible;
-}
-
-.gallery__modal-bg {
+.sub-about-us-gallery__modal-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -119,7 +105,7 @@
   z-index: -1;
 }
 
-.gallery__modal-container {
+.sub-about-us-gallery__modal-container {
   max-width: rem(920);
   width: 100%;
   aspect-ratio: 920 / 586;
@@ -128,10 +114,9 @@
  left: 50%;
  transform: translate(-50%, -50%);
   z-index: 1;
-  
 }
 
-.gallery__modal-container img {
+.sub-about-us-gallery__modal-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;

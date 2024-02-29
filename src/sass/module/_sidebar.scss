@@ -1,14 +1,14 @@
 @use 'global' as *;
 
-.sidebar {}
 
 .sidebar__inner {
   padding: 0 rem(20);
+  max-width: rem(530);
+  margin: 0 auto;
   @include mq(md) {
     padding: unset;
   }
 }
-.sidebar__block {}
 
 .sidebar__block + .sidebar__block {
   margin-top: rem(81);
@@ -91,6 +91,21 @@
   margin-top: rem(6);
   white-space: nowrap;
 }
+
+.sidebar__campaign-cards {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(27);
+  }
+}
+.sidebar__campaign-cards .campaign-card {
+  width: unset;
+}
+
+.sidebar__campaign-cards .campaign-card--blog-archive + .campaign-card--blog-archive {
+  margin-top: rem(40);
+}
+
 
 .sidebar__block-accordion {
   padding-left: rem(30);

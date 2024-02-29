@@ -15,7 +15,6 @@
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0em;
-    // padding: rem(4);
 }
 
 .accordion__title::before{
@@ -23,6 +22,7 @@
   content: "";
   background-image: url(../images/common/acordionmark.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   display: block;
   top: 50%;
   transform: translateY(-50%) rotate(-90deg);
@@ -32,14 +32,7 @@
   transition: all 0.2s;
 }
 
-.accordion__title::-webkit-details-marker{
-    // display: none;
-}
-// .accordion__title::after{
-//     content: "＞";
-//     margin-left: auto;
-//     transform: rotate(90deg);
-// }
+
 [open] > .accordion__title::before{
     transform:translateY(-30%) rotate(0deg);
     left: rem(-28);
