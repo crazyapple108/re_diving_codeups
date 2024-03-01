@@ -106,22 +106,22 @@
   height: rem(14);
   background-color: #fff;
   border: 1px solid #408f95;
+  border-radius: 50px;
 }
 
 .form__check input + span::after {
-  margin: rem(-1) 0 0 rem(2);
   content: "";
   display: block;
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) rotate(-40deg);
-  width: rem(10);
-  height: rem(5);
-  border-bottom: 2px solid #c94800;
-  border-left: 2px solid #c94800;
   opacity: 0;
   transition: opacity 0.2s;
+  background-color: #408f95;
+  border-radius: 50px;
+  height: rem(8);
+  left: rem(3);
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(8);
 }
 
 .form__check input:checked + span::after {
