@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .accordion{
-  
+    summary::-webkit-details-marker { display: none }
 }
 
 .accordion__title{
@@ -38,12 +38,12 @@
     left: rem(-28);
 }
 
-.accordion__title__icon,
-.accordion__content__icon{
-    width: 2rem;
-    font-weight: bold;
-    flex-shrink: 0;
-}
+// .accordion__title__icon,
+// .accordion__content__icon{
+//     width: 2rem;
+//     font-weight: bold;
+//     flex-shrink: 0;
+// }
 .accordion__content{
     display: flex;
     // padding: 1rem;
@@ -59,3 +59,4 @@
 .accordion__content-inner{
     flex-grow: 1;
 }
+
