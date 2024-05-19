@@ -347,6 +347,40 @@ $("#check").change(function () {
   }
 
   formValidation();
+
+  //インフォーメーションタブ制御
+ // URLのクエリパラメーターを取得
+const urlParams = new URLSearchParams(window.location.search);
+const tabParam = urlParams.get('tab');
+
+// タブメニューとコンテンツの要素を取得
+const tabMenuItems = document.querySelectorAll('.tab__menu-item');
+const tabContentItems = document.querySelectorAll('.tab__content-item');
+
+// タブを切り替える関数
+function showTab(tabId) {
+  // 既存のアクティブなタブをリセット
+  tabMenuItems.forEach(item => item.classList.remove('is-active'));
+  tabContentItems.forEach(item => item.classList.remove('is-active'));
+
+  // 指定されたタブをアクティブに設定
+  const targetTabMenu = document.querySelector(`.tab__menu-item[data-number="${tabId}"]`);
+  const targetTabContent = document.querySelector(`#${tabId}`);
+
+  if (targetTabMenu && targetTabContent) {
+    targetTabMenu.classList.add('is-active');
+    targetTabContent.classList.add('is-active');
+  }
+}
+
+// 初期表示時にクエリパラメーターに基づいてタブを切り替える
+window.addEventListener('load', () => {
+  if (tabParam) {
+    showTab(tabParam);
+  } else {
+    showTab('tab01'); // 初期値はタブ01
+  }
+});
 });
 
 

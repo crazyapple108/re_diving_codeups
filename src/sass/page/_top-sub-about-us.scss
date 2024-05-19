@@ -1,8 +1,8 @@
 @use 'global' as *;
 
 .top-sub-about-us {
-  margin-top: rem(50);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
+  // margin-top: rem(50);
+  // @include mq(md) {
+  //   margin-top: rem(150);
+  // }
 }

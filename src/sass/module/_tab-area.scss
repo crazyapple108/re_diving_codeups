@@ -4,25 +4,6 @@
   position: relative;
 }
 
-.tab-area::before {
-  content: "";
-  position: absolute;
-  top: -15.4%;
-  left: calc(50% - min(46vw,384px));
-  background-image: url(../images/common/voice-bg-fish.svg);
-  background-size: cover;
-  display: block;
-  width: 100%;
-  max-width: rem(120);
-  height: 100%;
-  max-height: rem(55);
-  @include mq(md) {
-    max-width: rem(301);
-    max-height: rem(138);
-    left: calc(50% - min(48vw,620px));
-  }
-}
-
 .tab-area__inner {
   max-width: rem(600);
 }

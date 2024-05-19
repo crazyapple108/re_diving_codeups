@@ -32,7 +32,8 @@
   @include mq(md) {
     grid-auto-flow: dense;
     margin-top: rem(77);
-    grid-template-rows: repeat(4, rem(369));
+    // grid-template-rows: repeat(4, rem(369));
+    grid-auto-rows: 1fr;
     grid-template-columns: 1fr 0.16fr 1fr;
     gap: 8px 8px;
   }
@@ -42,6 +43,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .sub-about-us-gallery__item:nth-child(6n + 1) {
@@ -64,6 +66,7 @@
 .sub-about-us-gallery__item img:nth-child(6n + 2),.sub-about-us-gallery__item img:nth-child(6n + 3) {
   @include mq(md) {
    aspect-ratio: 580 / 369;
+   height: rem(580);
   }
 }
 
@@ -76,6 +79,7 @@
 .sub-about-us-gallery__item img:nth-child(6n + 4),.sub-about-us-gallery__item img:nth-child(6n + 5) {
   @include mq(md) {
    aspect-ratio: 580 / 369;
+   height: rem(580);
   }
 }
 
@@ -119,5 +123,5 @@
 .sub-about-us-gallery__modal-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }

@@ -1,0 +1,11 @@
+@use 'global' as *;
+
+.bread-crumb{
+  margin-top: rem(8);
+  color:#0D2936;
+  font-family: $ja-font-family;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}

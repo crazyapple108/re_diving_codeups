@@ -4,30 +4,7 @@
   position: relative;
 }
 
-.sub-voice::before {
-  position: absolute;
-  content: "";
-  top: -0.8%;
-  left: calc(50% - min(46vw,265px));
-  background-image: url(../images/common/voice-bg-fish.svg);
-  background-size: cover;
-  display: block;
-  width: 100%;
-  max-width: rem(120);
-  height: 100%;
-  max-height: rem(55);
-  z-index: -1;
-  @include mq(md) {
-    top: -4.4%;
-    max-width: rem(301);
-    max-height: rem(138);
-    left: calc(50% - min(46vw,620px));
-
-  }
-}
-
 .sub-voice__tag-list {
-  max-width: rem(530);
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
@@ -35,13 +12,13 @@
   }
 }
 
-
 .sub-voice__wrapper {
   margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(36);
   }
 }
+
 .sub-voice__cards {
   margin-top: rem(40);
   @include mq(md) {

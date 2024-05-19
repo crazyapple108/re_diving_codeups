@@ -49,10 +49,13 @@
   color: #fff;
   background-color: #408F95;
   }
+
   .pagination li a:hover {
   color: #fff;
   background-color: #408F95;
+  transition: all 0.5s;
   }
+
   .pagination li a.prev::before{
   font-family: 'Font Awesome 5 Free';
   content: "\f053";

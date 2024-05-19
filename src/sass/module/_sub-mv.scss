@@ -11,7 +11,7 @@
   top: 47%;
   transform: translate(-50%, -50%);
   @include mq(md) {
-    top: 56%;
+    top: 59%;
   }
 }
 
@@ -47,11 +47,11 @@
 
 .sub-mv__img {
   display: block;
-  height: 69vh;
+  height: rem(460);
   margin: 0 calc(50% - 50vw);
   width: 100vw;
   @include mq(md) {
-    height: 71.3vh;
+    height: rem(548);
   }
 }
 
@@ -61,12 +61,12 @@
   object-fit: cover;
 }
 
-.sub-mv__pagenation {
-  margin-top: rem(8);
-  color:#0D2936;
-  font-family: $ja-font-family;
-  font-size: rem(14);
-  font-weight: $normal;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-}
+// .sub-mv__pagenation {
+//   margin-top: rem(8);
+//   color:#0D2936;
+//   font-family: $ja-font-family;
+//   font-size: rem(14);
+//   font-weight: $normal;
+//   line-height: 1.5;
+//   letter-spacing: 0.05em;
+// }

@@ -34,6 +34,13 @@
     }
 }
 
+.tab__menu-item:hover {
+  background-color: #408F95;
+  color: #fff;
+  transition: 0.5s;
+}
+
+
 .tab__menu-item:nth-child(2n) {
   @include mq(md) {
     padding-left: rem(18);
@@ -60,16 +67,21 @@
   }
 }
 
+.tab__menu-item:hover::before {
+  filter:  invert(100%) sepia(80%) saturate(50%) hue-rotate(87deg) brightness(180%) contrast(100%);
+  transition: 0.5s;
+}
+
+
 .tab__menu-item:nth-child(2):before {
   background-image: url(../images/common/tabicon2.svg);
   left: 5.9%;
 }
+
 .tab__menu-item:nth-child(3):before {
   background-image: url(../images/common/tabicon3.svg);
   left: 10%;
 }
-
-
 
 .tab__menu-item + .tab__menu-item {
   margin-left: rem(20);

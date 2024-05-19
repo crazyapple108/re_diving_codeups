@@ -9,26 +9,26 @@
   position: relative;
 }
 
-.sub-price__block-wrapper::before {
-  position: absolute;
-  content: "";
-  top: -2.1%;
-  left: calc(50% - min(46vw,265px));
-  background-image: url(../images/common/voice-bg-fish.svg);
-  background-size: cover;
-  display: block;
-  width: 100%;
-  max-width: rem(120);
-  height: 100%;
-  max-height: rem(55);
-  z-index: -1;
-  @include mq(md) {
-    top: -6.4%;
-    max-width: rem(301);
-    max-height: rem(138);
-    left: calc(50% - min(46vw,620px));
-  }
-}
+// .sub-price__block-wrapper::before {
+//   position: absolute;
+//   content: "";
+//   top: -2.1%;
+//   left: calc(50% - min(46vw,265px));
+//   background-image: url(../images/common/voice-bg-fish.svg);
+//   background-size: cover;
+//   display: block;
+//   width: 100%;
+//   max-width: rem(120);
+//   height: 100%;
+//   max-height: rem(55);
+//   z-index: -1;
+//   @include mq(md) {
+//     top: -6.4%;
+//     max-width: rem(301);
+//     max-height: rem(138);
+//     left: calc(50% - min(46vw,620px));
+//   }
+// }
 
 .sub-price__block {
   @include mq(md) {
