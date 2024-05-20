@@ -382,5 +382,3 @@ window.addEventListener('load', () => {
   }
 });
 });
-
-
