@@ -54,12 +54,6 @@
   transform: rotate(0deg);
 }
 
-.faq-list__item-question span {
-  margin-right: rem(20);
-  display: inline-block;
-  color: #F6D970;
-}
-
 .faq-list__item-answer {
   padding: rem(23) rem(16);
   display: none;
@@ -76,10 +70,4 @@
       // font-size: rem(18);
       margin-top: rem(14);
   }
-}
-
-.faq-list__item-answer span {
-  margin-right: rem(20);
-  display: inline-block;
-  color: #DE8430;
 }
