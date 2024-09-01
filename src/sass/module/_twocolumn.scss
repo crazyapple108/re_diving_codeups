@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.twocolumn {
+  max-width: rem(530);
+  @include mq(md) {
+    display: flex;
+    gap: rem(80);
+  }
+}

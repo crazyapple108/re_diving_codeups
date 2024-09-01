@@ -2,6 +2,10 @@
 
 .faq{
   position: relative;
+  margin-top: rem(50);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
 }
 
 // .faq::before {
@@ -38,6 +42,3 @@
   }
 }
 
-.faq__list {
-
-}

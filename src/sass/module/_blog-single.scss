@@ -31,13 +31,13 @@
 //   }
 // }
 
-.blog-single__inner {
-  max-width: rem(530);
-  @include mq(md) {
-    display: flex;
-    gap: rem(80);
-  }
-}
+// .blog-single__inner {
+//   max-width: rem(530);
+//   @include mq(md) {
+//     display: flex;
+//     gap: rem(80);
+//   }
+// }
 
 .blog-single__main {
   @include mq(md) {
@@ -131,8 +131,7 @@
   background-size: cover;
   width: rem(18);
   height: rem(18);
-  top: 50%;
-  transform: translateY(-50%);
+  top: rem(3);
   left: 0;
   filter: invert(52%) sepia(43%) saturate(470%) hue-rotate(136deg) brightness(88%) contrast(91%);
 }

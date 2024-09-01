@@ -3,6 +3,7 @@
 .sub-about-us-pc{
   @include mq(md) {
     position: relative;
+    margin-top: rem(150);
    }
 }
 
