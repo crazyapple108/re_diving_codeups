@@ -168,12 +168,12 @@ $(accordionSummary).each(function (){
     })
 })
     
-$(function () {
-  // 最初のコンテンツは表示
-  $(".faq-list__item .faq-list__item-answer").css("display", "block");
-  // 最初の矢印は開いた時の状態に
-  $(".faq-list__item .js-faq-question").addClass("is-open");
-});
+// $(function () {
+//   // 最初のコンテンツは表示
+//   $(".faq-list__item .faq-list__item-answer").css("display", "block");
+//   // 最初の矢印は開いた時の状態に
+//   $(".faq-list__item .js-faq-question").addClass("is-open");
+// });
 
 $('.js-faq-question').on('click', function () {
   $(this).next().slideToggle();

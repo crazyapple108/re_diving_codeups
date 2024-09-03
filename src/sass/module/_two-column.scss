@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.twocolumn {
+.two-column {
   max-width: rem(530);
   @include mq(md) {
     display: flex;
